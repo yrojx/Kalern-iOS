@@ -8,12 +8,8 @@
 import UIKit
 
 struct ColorDot {
-    let color: UIColor
-}
-
-struct ColorWheel {
-    var id: Int
-    var colors: [ColorDot]
+    let id: Int
+    var color: UIColor
 }
 
 struct BorderedColorDot {
