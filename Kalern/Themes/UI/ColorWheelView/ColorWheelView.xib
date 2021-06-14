@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
+            <connections>
+                <outlet property="colorWheelView" destination="iN0-l3-epB" id="gbZ-S1-0gv"/>
+                <outletCollection property="colorDotViews" destination="WS9-b8-glW" collectionClass="NSMutableArray" id="4MO-xW-Nus"/>
+                <outletCollection property="colorDotViews" destination="SER-RW-gJ3" collectionClass="NSMutableArray" id="wFJ-yr-oUy"/>
+                <outletCollection property="colorDotViews" destination="TU6-NX-Zkj" collectionClass="NSMutableArray" id="SJJ-JZ-N67"/>
+                <outletCollection property="colorDotViews" destination="3YT-GY-r7H" collectionClass="NSMutableArray" id="dyD-A7-4TL"/>
+                <outletCollection property="colorDotViews" destination="1IY-cO-0RJ" collectionClass="NSMutableArray" id="Yb7-lR-jy0"/>
+                <outletCollection property="colorDotViews" destination="pDy-gL-9rY" collectionClass="NSMutableArray" id="ay7-bP-A8V"/>
+                <outletCollection property="colorDotViews" destination="Qhw-JB-a1C" collectionClass="NSMutableArray" id="I8w-4a-b96"/>
+                <outletCollection property="colorDotViews" destination="hTG-Bu-iTf" collectionClass="NSMutableArray" id="9gI-kS-e45"/>
+                <outletCollection property="colorDotViews" destination="L1N-d0-CWu" collectionClass="NSMutableArray" id="Sh0-pR-RT0"/>
+                <outletCollection property="colorDotViews" destination="cmJ-Gr-7sd" collectionClass="NSMutableArray" id="B70-db-zJb"/>
+                <outletCollection property="colorDotViews" destination="jGV-a0-svV" collectionClass="NSMutableArray" id="cLw-mh-CdO"/>
+                <outletCollection property="colorDotViews" destination="fLo-rT-kRf" collectionClass="NSMutableArray" id="qtv-CK-D9w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="328"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-b8-glW" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="135" y="0.0" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-rT-kRf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="67" y="18" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGV-a0-svV" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="18" y="68" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-Gr-7sd" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="135" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SER-RW-gJ3" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="203" y="18" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-NX-Zkj" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="253" y="67" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-GY-r7H" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="271" y="135" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1IY-cO-0RJ" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="253" y="203" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDy-gL-9rY" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="203" y="252" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-JB-a1C" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="135" y="271" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-d0-CWu" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="18" y="203" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-Bu-iTf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="68" y="253" width="57.5" height="57.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
