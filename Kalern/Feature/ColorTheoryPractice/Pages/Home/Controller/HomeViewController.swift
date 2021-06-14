@@ -17,6 +17,10 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBAction func btnStartUIPracticeTapped(_ sender: Any) {
+        performSegue(withIdentifier: "goToColorHueTheory", sender: self)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         btnStartUIPractice.layer.borderWidth = 1
         btnStartUIPractice.layer.borderColor = #colorLiteral(red: 1, green: 0.3600544035, blue: 0, alpha: 1)
