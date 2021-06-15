@@ -41,65 +41,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-3z-8GG" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="31" y="194" width="328" height="311"/>
+                                <rect key="frame" x="31" y="194" width="328" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="328" id="1V8-Hg-iNY"/>
                                     <constraint firstAttribute="height" constant="328" id="ADn-Vk-R5o"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS5-fF-svt">
-                                <rect key="frame" x="35" y="643" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="idC-JJ-PUj">
+                                <rect key="frame" x="34" y="593" width="322" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-f1-yq0">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="50"/>
+                                        <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Start Learning">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnStartUIPracticeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMm-gd-1I2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS5-fF-svt">
+                                        <rect key="frame" x="0.0" y="66" width="322" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Start UI Practice">
+                                            <color key="titleColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ESA-qE-Rli"/>
-                                    <constraint firstAttribute="width" constant="321" id="L9o-Ql-HhG"/>
+                                    <constraint firstAttribute="height" constant="116" id="Q5E-xk-CoQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Start UI Practice">
-                                    <color key="titleColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-f1-yq0">
-                                <rect key="frame" x="35" y="570" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HyM-Qw-QSZ"/>
-                                    <constraint firstAttribute="width" constant="321" id="TFI-Gr-ND5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Start Learning">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnStartUIPracticeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMm-gd-1I2"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zS5-fF-svt" secondAttribute="trailing" constant="35" id="3Sk-5L-dBb"/>
-                            <constraint firstItem="KP8-f1-yq0" firstAttribute="top" secondItem="5IB-3z-8GG" secondAttribute="bottom" constant="65" id="63G-iT-6O6"/>
-                            <constraint firstItem="5IB-3z-8GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="FwR-XB-8x6"/>
-                            <constraint firstItem="zS5-fF-svt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="LTo-X7-iGV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zS5-fF-svt" secondAttribute="bottom" constant="117" id="Upy-pf-WHv"/>
-                            <constraint firstItem="5IB-3z-8GG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="bJn-0G-bE1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5IB-3z-8GG" secondAttribute="trailing" constant="31" id="dXb-Mg-swa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KP8-f1-yq0" secondAttribute="trailing" constant="35" id="jGu-yQ-Igb"/>
-                            <constraint firstItem="zS5-fF-svt" firstAttribute="top" secondItem="KP8-f1-yq0" secondAttribute="bottom" constant="23" id="rqr-W0-IQp"/>
-                            <constraint firstItem="zS5-fF-svt" firstAttribute="top" secondItem="KP8-f1-yq0" secondAttribute="bottom" constant="23" id="t6v-Tb-ep6"/>
-                            <constraint firstItem="KP8-f1-yq0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="vPP-S6-yNN"/>
+                            <constraint firstItem="5IB-3z-8GG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLY-2z-90T"/>
+                            <constraint firstItem="idC-JJ-PUj" firstAttribute="top" secondItem="5IB-3z-8GG" secondAttribute="bottom" constant="71" id="apt-wh-2Fn"/>
+                            <constraint firstItem="idC-JJ-PUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="g89-1k-0sn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idC-JJ-PUj" secondAttribute="trailing" constant="34" id="sph-Gf-aRl"/>
+                            <constraint firstItem="5IB-3z-8GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="tqw-K3-wYT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eBU-Sh-Uni"/>
