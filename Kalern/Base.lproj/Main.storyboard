@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-3z-8GG" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="31" y="194" width="328" height="328"/>
+                                <rect key="frame" x="31" y="194" width="328" height="311"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="328" id="1V8-Hg-iNY"/>
@@ -49,7 +49,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS5-fF-svt">
-                                <rect key="frame" x="35" y="660" width="320" height="33"/>
+                                <rect key="frame" x="35" y="643" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ESA-qE-Rli"/>
@@ -66,7 +66,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-f1-yq0">
-                                <rect key="frame" x="35" y="587" width="320" height="50"/>
+                                <rect key="frame" x="35" y="570" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HyM-Qw-QSZ"/>
@@ -237,44 +237,47 @@
         <scene sceneID="c4Y-Qe-s6Y">
             <objects>
                 <viewController id="3eZ-Jd-Yga" customClass="HueAssesmentViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="u8x-gZ-Tkh">
+                    <view key="view" contentMode="scaleToFill" id="u8x-gZ-Tkh">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-SI-fOk" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="31" y="170" width="328" height="327.33333333333326"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-SI-fOk" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
+                                <rect key="frame" x="31" y="161.33333333333337" width="328" height="328"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-L1-aAy">
+                                        <rect key="frame" x="104" y="104.99999999999997" width="120" height="118.66666666666667"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Aa7-sA-c9P"/>
+                                            <constraint firstAttribute="height" constant="120" id="fN3-2H-7Q4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerX" secondItem="UwD-SI-fOk" secondAttribute="centerX" id="5eP-1n-qfx"/>
                                     <constraint firstAttribute="width" constant="328" id="Yyn-mP-0fF"/>
-                                    <constraint firstAttribute="height" constant="328" id="pql-x2-TFU"/>
+                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerY" secondItem="UwD-SI-fOk" secondAttribute="centerY" id="d49-np-RJi"/>
+                                    <constraint firstAttribute="height" constant="328" id="tTv-nR-qNx"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szH-hN-hXM">
-                                <rect key="frame" x="20" y="111" width="350" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="83O-cZ-ArN"/>
-                                    <constraint firstAttribute="height" constant="29" id="HHx-zA-Zhb"/>
-                                </constraints>
+                                <rect key="frame" x="173" y="111" width="44.333333333333343" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick colour of your choice to test your ability in this theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-uv-fcn">
-                                <rect key="frame" x="38" y="621.33333333333348" width="314" height="40.666666666666629"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="7J7-sd-h5z"/>
-                                    <constraint firstAttribute="height" constant="77" id="9ET-dT-rr4"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick colour of your choice to test your ability in this theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-uv-fcn">
+                                <rect key="frame" x="27" y="645" width="336" height="40.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AI-M6b">
-                                <rect key="frame" x="35" y="723" width="320" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AI-M6b">
+                                <rect key="frame" x="35" y="721.66666666666663" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lnb-b0-GsV"/>
-                                    <constraint firstAttribute="width" constant="320" id="zhy-8S-EWa"/>
+                                    <constraint firstAttribute="height" constant="50" id="35X-yt-LjV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Next">
@@ -284,83 +287,63 @@
                                     <action selector="btnNextTapped:" destination="3eZ-Jd-Yga" eventType="touchUpInside" id="MQs-kD-6q6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-L1-aAy">
-                                <rect key="frame" x="135" y="275" width="120" height="120"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Aa7-sA-c9P"/>
-                                    <constraint firstAttribute="height" constant="121.33" id="fN3-2H-7Q4"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Se-Rq-xYb">
-                                <rect key="frame" x="83" y="527.33333333333337" width="224" height="74"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pup-me-mKD">
+                                <rect key="frame" x="83.000000000000014" y="522" width="224.33333333333337" height="74"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-9s-yQI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="8" width="57" height="57"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="57" id="Vdj-nn-hzT"/>
-                                            <constraint firstAttribute="height" constant="57" id="gel-Ck-0d1"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RI-sV-Hup" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="8" width="57" height="57"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="57" id="2nq-IW-wuD"/>
-                                            <constraint firstAttribute="width" constant="57" id="5DX-DL-DmE"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-1I-Gcc" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                        <rect key="frame" x="154" y="8" width="57" height="57"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="57" id="0c4-hu-zhZ"/>
-                                            <constraint firstAttribute="width" constant="57" id="vlZ-0u-fxr"/>
-                                        </constraints>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pwY-qG-BLL">
+                                        <rect key="frame" x="20" y="13" width="184" height="48"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-9s-yQI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="DkD-W3-LWl"/>
+                                                    <constraint firstAttribute="width" constant="48" id="Vdj-nn-hzT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RI-sV-Hup" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                                                <rect key="frame" x="68" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="5DX-DL-DmE"/>
+                                                    <constraint firstAttribute="height" constant="48" id="WiN-Pw-JaM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-1I-Gcc" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                                                <rect key="frame" x="136" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="FhQ-No-dia"/>
+                                                    <constraint firstAttribute="width" constant="48" id="vlZ-0u-fxr"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="t9C-9s-yQI" firstAttribute="leading" secondItem="7Se-Rq-xYb" secondAttribute="leading" constant="15" id="2gc-8p-pfh"/>
-                                    <constraint firstAttribute="width" constant="224" id="68O-Sd-OsM"/>
-                                    <constraint firstItem="Br3-1I-Gcc" firstAttribute="top" secondItem="7Se-Rq-xYb" secondAttribute="top" constant="8" id="9fF-8k-frt"/>
-                                    <constraint firstItem="t9C-9s-yQI" firstAttribute="top" secondItem="7Se-Rq-xYb" secondAttribute="top" constant="8" id="Hxp-W8-Kfh"/>
-                                    <constraint firstAttribute="bottom" secondItem="Br3-1I-Gcc" secondAttribute="bottom" constant="8" id="Rac-nQ-eNw"/>
-                                    <constraint firstAttribute="trailing" secondItem="Br3-1I-Gcc" secondAttribute="trailing" constant="13" id="ZPe-7s-kxQ"/>
-                                    <constraint firstItem="7RI-sV-Hup" firstAttribute="leading" secondItem="t9C-9s-yQI" secondAttribute="trailing" constant="12" id="ZZJ-il-mOa"/>
-                                    <constraint firstAttribute="bottom" secondItem="7RI-sV-Hup" secondAttribute="bottom" constant="8" id="hoV-ZC-Ea4"/>
-                                    <constraint firstAttribute="height" constant="74" id="mHg-LH-HQa"/>
-                                    <constraint firstItem="Br3-1I-Gcc" firstAttribute="leading" secondItem="7RI-sV-Hup" secondAttribute="trailing" constant="13" id="sK7-8u-5CA"/>
-                                    <constraint firstAttribute="bottom" secondItem="t9C-9s-yQI" secondAttribute="bottom" constant="8" id="uid-77-h4Q"/>
-                                    <constraint firstItem="7RI-sV-Hup" firstAttribute="top" secondItem="7Se-Rq-xYb" secondAttribute="top" constant="8" id="zWU-xF-WtA"/>
+                                    <constraint firstAttribute="width" constant="224.33000000000001" id="1S9-qr-a0V"/>
+                                    <constraint firstAttribute="height" constant="74" id="2de-tp-zFy"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vsj-3V-SsP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="top" secondItem="lUB-uv-fcn" secondAttribute="bottom" constant="19" id="0To-dR-WqV"/>
-                            <constraint firstItem="UwD-SI-fOk" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="31" id="7gr-rv-lbH"/>
-                            <constraint firstItem="TRX-L1-aAy" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="135" id="AD8-hN-yaT"/>
-                            <constraint firstItem="szH-hN-hXM" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="20" id="CHp-0X-kSn"/>
-                            <constraint firstItem="lUB-uv-fcn" firstAttribute="top" secondItem="7Se-Rq-xYb" secondAttribute="bottom" constant="20" id="CWD-jb-E5p"/>
-                            <constraint firstItem="7Se-Rq-xYb" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="30" id="DNC-Xt-yUL"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="lUB-uv-fcn" secondAttribute="trailing" constant="38" id="EG4-6Y-ko5"/>
-                            <constraint firstItem="7Se-Rq-xYb" firstAttribute="top" secondItem="TRX-L1-aAy" secondAttribute="bottom" constant="132" id="F2U-PI-Ab5"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="UwD-SI-fOk" secondAttribute="trailing" constant="31" id="GsN-bF-owc"/>
-                            <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="30" id="JsD-fJ-nms"/>
-                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="top" secondItem="lUB-uv-fcn" secondAttribute="bottom" constant="19" id="QHo-P3-lsO"/>
-                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="35" id="RRn-xo-AS4"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="bottom" secondItem="Hfq-AI-M6b" secondAttribute="bottom" constant="50" id="WM5-yY-StT"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="7Se-Rq-xYb" secondAttribute="trailing" constant="83" id="Y9X-al-V6u"/>
-                            <constraint firstItem="szH-hN-hXM" firstAttribute="top" secondItem="Vsj-3V-SsP" secondAttribute="top" constant="23" id="dtl-VL-cbg"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="TRX-L1-aAy" secondAttribute="trailing" constant="135" id="eKc-hr-IgL"/>
-                            <constraint firstItem="7Se-Rq-xYb" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="83" id="fLA-1g-GAp"/>
-                            <constraint firstItem="lUB-uv-fcn" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="38" id="j5E-Tl-Mjn"/>
+                            <constraint firstItem="lUB-uv-fcn" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="0Lu-jG-q5T"/>
+                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="35" id="36o-1S-quj"/>
+                            <constraint firstItem="lUB-uv-fcn" firstAttribute="top" secondItem="pup-me-mKD" secondAttribute="bottom" constant="49" id="5hh-cw-E1h"/>
+                            <constraint firstItem="szH-hN-hXM" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="6J6-Ph-30n"/>
+                            <constraint firstItem="lUB-uv-fcn" firstAttribute="leading" secondItem="u8x-gZ-Tkh" secondAttribute="leading" constant="27" id="DoM-fI-wM2"/>
+                            <constraint firstItem="szH-hN-hXM" firstAttribute="top" secondItem="Vsj-3V-SsP" secondAttribute="top" constant="23" id="Kxa-Cw-jp6"/>
+                            <constraint firstItem="pup-me-mKD" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="POy-Wl-5Fd"/>
+                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="top" secondItem="lUB-uv-fcn" secondAttribute="bottom" constant="36" id="TuN-io-mPY"/>
+                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="abY-nq-i5R"/>
+                            <constraint firstItem="UwD-SI-fOk" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="daP-1f-Hom"/>
+                            <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="32.666666666666629" id="hTl-9E-hI6"/>
+                            <constraint firstAttribute="trailing" secondItem="lUB-uv-fcn" secondAttribute="trailing" constant="27" id="j9U-3Y-fsw"/>
                             <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="30" id="jb9-I6-ulp"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="Hfq-AI-M6b" secondAttribute="trailing" constant="35" id="kNw-Yi-Pbv"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="szH-hN-hXM" secondAttribute="trailing" constant="20" id="ngv-FT-a30"/>
+                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="Hfq-AI-M6b" secondAttribute="trailing" constant="35" id="tLw-as-qpz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QSo-8I-Opt"/>
@@ -633,7 +616,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zi8-U3-bEP">
-                                <rect key="frame" x="135" y="205.99999999999997" width="120" height="118.6666666666667"/>
+                                <rect key="frame" x="135" y="206" width="120" height="119.99999999999999"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="8BT-lX-AwK"/>
@@ -643,7 +626,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tint &amp; Shade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458-3Z-Hud">
-                                <rect key="frame" x="20" y="361.66666666666669" width="350" height="29"/>
+                                <rect key="frame" x="20" y="363" width="350" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="KgL-mA-0vF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="P9K-Qv-cSO"/>
@@ -655,7 +638,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-li-nVm">
-                                <rect key="frame" x="45" y="405.66666666666669" width="300" height="68"/>
+                                <rect key="frame" x="45" y="407" width="300" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="FHq-c0-aYg"/>
                                     <constraint firstAttribute="width" constant="300" id="YPf-yq-9oM"/>
@@ -667,7 +650,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63D-Mx-pTn">
-                                <rect key="frame" x="27" y="713.66666666666663" width="336" height="76"/>
+                                <rect key="frame" x="27" y="715" width="336" height="76"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaN-bm-eyy" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="21" y="9" width="42" height="42"/>
@@ -775,7 +758,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFr-bs-zDe" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="45" y="508.66666666666674" width="48" height="48"/>
+                                <rect key="frame" x="45" y="510" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="uVl-al-8HY"/>
@@ -783,7 +766,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-B7-DvU" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="108" y="508.66666666666674" width="48" height="48"/>
+                                <rect key="frame" x="108" y="510" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="AGW-PP-HiS"/>
@@ -791,7 +774,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCP-mf-4Kx" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="171" y="508.66666666666674" width="48" height="48"/>
+                                <rect key="frame" x="171" y="510" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="31p-yH-n7K"/>
@@ -799,7 +782,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t24-r4-hS3" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="234" y="508.66666666666674" width="48" height="48"/>
+                                <rect key="frame" x="234" y="510" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="6Tr-6h-45l"/>
@@ -807,7 +790,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3S-yF-G7h" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="297" y="508.66666666666674" width="48" height="48"/>
+                                <rect key="frame" x="297" y="510" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JLt-it-UkU"/>
@@ -815,7 +798,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgU-7l-0MG" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="45" y="571.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="45" y="573" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="3f5-To-2OR"/>
@@ -823,7 +806,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-Xa-hI5" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="108" y="571.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="108" y="573" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="B1s-g3-iuK"/>
@@ -831,7 +814,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Wk-ThD" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="171" y="571.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="171" y="573" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="66i-nb-gfW"/>
@@ -839,7 +822,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCw-Lf-GBL" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="234" y="571.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="234" y="573" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="a8u-rW-mZr"/>
@@ -847,7 +830,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loa-3z-C1l" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="297" y="571.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="297" y="573" width="48" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="Qgt-M7-20F"/>
