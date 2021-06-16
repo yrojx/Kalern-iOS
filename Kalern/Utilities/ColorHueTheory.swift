@@ -15,13 +15,13 @@ enum ColorHueTheoryType: String, CaseIterable {
     func getImage() -> UIImage {
         switch self {
             case .triadic:
-                return UIImage()
+                return ColorTheoryImage.triadic ?? UIImage()
                 
             case .analogous:
-                return UIImage()
+                return ColorTheoryImage.analogous ?? UIImage()
                 
             case .splitComplementary:
-                return UIImage()
+                return ColorTheoryImage.splitComplementary ?? UIImage()
         }
     }
 }
