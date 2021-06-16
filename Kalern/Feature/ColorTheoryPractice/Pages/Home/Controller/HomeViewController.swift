@@ -11,10 +11,14 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var btnStartLearning: UIButton!
     @IBOutlet weak var btnStartUIPractice: UIButton!
+    @IBOutlet weak var colorWheelView: ColorWheelView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for (idx, colorDotView) in colorWheelView.colorDotViews.enumerated() {
+            colorDotView.colorDot = ColorDot(id: idx, color: ColorWheel.colors[idx] ?? .red)
+        }
     }
     
     @IBAction func btnStartUIPracticeTapped(_ sender: Any) {
