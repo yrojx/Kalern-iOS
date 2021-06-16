@@ -66,6 +66,12 @@ class HueAssesmentViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         btnNext.layer.cornerRadius = 10
+        
+        viewBackground.layer.cornerRadius = 10
+        
+        viewBackground.layer.borderColor = #colorLiteral(red: 0.9864340425, green: 0.3019824326, blue: 0, alpha: 1)
+        viewBackground.layer.borderWidth = 1
+        
         self.navigationItem.title = "Hue Practice"
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
     }
