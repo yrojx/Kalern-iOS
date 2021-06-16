@@ -7,25 +7,20 @@
 
 import UIKit
 
-protocol ColorDotViewDelegate {
-    func colorDotView(color: UIColor)
-}
-
 @IBDesignable
 
 class ColorDotView: UIView {
 
     @IBOutlet var colorDotView: UIView!
     
-    var delegate: ColorDotViewDelegate?
-    
     let nibName = "ColorDotView"
     
     var colorDot: ColorDot? {
         didSet {
             guard let color = colorDot?.color else {
-                return colorDotView.backgroundColor = .blue
+                return colorDotView.backgroundColor = .red
             }
+            print(color)
             colorDotView.backgroundColor = color
         }
     }
@@ -48,15 +43,10 @@ class ColorDotView: UIView {
         colorDotView.layer.cornerRadius = min(self.frame.size.height, self.frame.size.width) / 2.0
         colorDotView.clipsToBounds = true
     
-        // Add tap gesture
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        colorDotView.addGestureRecognizer(tap)
+        colorDotView.layer.borderColor = UIColor.systemBlue.cgColor
 
         self.addSubview(colorDotView)
     }
     
-    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
-        delegate?.colorDotView(color: colorDot?.color ?? .blue)
-    }
 
 }
