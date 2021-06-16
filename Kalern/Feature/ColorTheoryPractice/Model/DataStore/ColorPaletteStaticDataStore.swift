@@ -8,7 +8,7 @@
 import Foundation
 
 struct ColorPaletteStaticDataStore {
-    func initColorPalette() -> ColorPallete {
+    static func initColorPalette() -> ColorPallete {
         return ColorPallete(colors: ColorPaletteStatic.colors)
     }
 }
