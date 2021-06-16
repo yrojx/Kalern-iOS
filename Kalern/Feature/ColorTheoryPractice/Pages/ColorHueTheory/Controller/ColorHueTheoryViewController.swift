@@ -11,10 +11,42 @@ class ColorHueTheoryViewController: UIViewController {
 
     @IBOutlet weak var viewTitle: UIView!
     @IBOutlet weak var btnPracticeTheory: UIButton!
+    @IBOutlet weak var colorHueTheoryImage: UIImageView!
+    @IBOutlet weak var colorHueTheoryTitle: UILabel!
+    @IBOutlet weak var colorHueTheoryDesc: UITextView!
+    
+    var index: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setColorHueTheoryContent()
+    }
+    
+    @IBAction func previousBtnPressed(_ sender: UIButton) {
+        if index > 0 {
+            index -= 1
+        } else {
+            index = 2
+        }
+        setColorHueTheoryContent()
+    }
+    
+    @IBAction func nextBtnPressed(_ sender: UIButton) {
+        if index < 2 {
+            index += 1
+        } else {
+            index = 0
+        }
+        setColorHueTheoryContent()
+    }
+    
+    private func setColorHueTheoryContent() {
+        colorHueTheoryTitle.text = ColorTheoryPracticeRepository.shared.colorHueTheories[index].type.rawValue
+        
+        colorHueTheoryImage.image = ColorTheoryPracticeRepository.shared.colorHueTheories[index].type.getImage()
+        
+        colorHueTheoryDesc.text = ColorTheoryPracticeRepository.shared.colorHueTheories[index].description
     }
     
     @IBAction func btnPracticeTheoryTapped(_ sender: Any) {
