@@ -8,7 +8,7 @@
 import UIKit
 
 struct ColorWheel {
-    var colors = [
+    static let colors = [
         UIColor(named: "color0"),
         UIColor(named: "color1"),
         UIColor(named: "color2"),
