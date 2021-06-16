@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -350,7 +350,7 @@
                     <navigationItem key="navigationItem" id="QSo-8I-Opt"/>
                     <connections>
                         <outlet property="btnNext" destination="Hfq-AI-M6b" id="sbn-Zs-SGB"/>
-                        <outlet property="viewBackground" destination="pup-me-mKD" id="ovN-2A-RVx"/>
+                        <outlet property="colorPalleteContainer" destination="pup-me-mKD" id="ovN-2A-RVx"/>
                         <segue destination="hO8-HI-vTY" kind="show" identifier="goToColorPalette" id="ONh-CE-jiO"/>
                     </connections>
                 </viewController>
