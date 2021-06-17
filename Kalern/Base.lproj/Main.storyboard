@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,8 +44,7 @@
                                 <rect key="frame" x="31" y="194" width="328" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="328" id="1V8-Hg-iNY"/>
-                                    <constraint firstAttribute="height" constant="328" id="ADn-Vk-R5o"/>
+                                    <constraint firstAttribute="width" secondItem="5IB-3z-8GG" secondAttribute="height" multiplier="1:1" id="6sF-K1-Usl"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="idC-JJ-PUj">
@@ -89,8 +88,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5IB-3z-8GG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLY-2z-90T"/>
-                            <constraint firstItem="idC-JJ-PUj" firstAttribute="top" secondItem="5IB-3z-8GG" secondAttribute="bottom" constant="71" id="apt-wh-2Fn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5IB-3z-8GG" secondAttribute="trailing" constant="31" id="Nhh-Jk-Ytg"/>
+                            <constraint firstItem="5IB-3z-8GG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Ogw-00-Ple"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="idC-JJ-PUj" secondAttribute="bottom" constant="101" id="Sz6-iv-vTp"/>
                             <constraint firstItem="idC-JJ-PUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="g89-1k-0sn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idC-JJ-PUj" secondAttribute="trailing" constant="34" id="sph-Gf-aRl"/>
                             <constraint firstItem="5IB-3z-8GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="tqw-K3-wYT"/>
