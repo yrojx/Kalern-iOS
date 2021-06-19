@@ -98,8 +98,6 @@ class HueAssesmentViewController: UIViewController {
         
         pickedColorPair.sort()
         
-        print(pickedColorPair)
-        
         if let colorPairs = repository.pickedColorHueTheory?.colorPairs {
             for colorPair in colorPairs {
                 if colorPair == pickedColorPair {
