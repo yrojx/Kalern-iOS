@@ -12,9 +12,22 @@ class TemplateViewController: UIViewController {
     @IBOutlet weak var viewTemplate: UIView!
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var btnShowObject: UIButton!
+    @IBOutlet var colorPaletteView: [ColorDotView]!
+    
+    let repository = ColorTheoryPracticeRepository.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        repository.modifiedColorPallete?.initColorPalleteView(colorDotViews: colorPaletteView)
+    }
+    
+    func setTemplateGesture() -> UITapGestureRecognizer{
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapTemplate(_:)))
+        return tapRecognizer
+    }
+    
+    @objc func handleTapTemplate(_ sender: UITapGestureRecognizer? = nil){
         
     }
     
