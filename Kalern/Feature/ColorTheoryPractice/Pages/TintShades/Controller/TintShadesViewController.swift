@@ -39,6 +39,9 @@ class TintShadesViewController: UIViewController {
     }
     
     @IBAction func btnNextTapped(_ sender: Any) {
+        for (idx, colorDotView) in colorPalleteView.enumerated() {
+            repository.modifiedColorPallete?.colors[idx] = colorDotView.colorDot?.color ?? UIColor()
+        }
         performSegue(withIdentifier: "goToInstructions", sender: self)
     }
     
@@ -54,8 +57,8 @@ class TintShadesViewController: UIViewController {
         for (idx, tintView) in tintViews.enumerated() {
             tintView.tag = idx
             shadeViews[idx].tag = idx + 5
-            tintView.addGestureRecognizer(setGesture())
-            shadeViews[idx].addGestureRecognizer(setGesture())
+            tintView.addGestureRecognizer(setTintShadeGesture())
+            shadeViews[idx].addGestureRecognizer(setTintShadeGesture())
         }
     }
     
@@ -73,13 +76,13 @@ class TintShadesViewController: UIViewController {
     }
     
     
-    func setGesture() -> UITapGestureRecognizer {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+    func setTintShadeGesture() -> UITapGestureRecognizer {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTintShadeTap(_:)))
         
         return tapRecognizer
     }
     
-    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+    @objc func handleTintShadeTap(_ sender: UITapGestureRecognizer? = nil) {
         guard let tag = sender?.view?.tag else {return}
         
         if tag < 5 {
