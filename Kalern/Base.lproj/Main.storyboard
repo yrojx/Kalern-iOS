@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1310,7 +1310,7 @@ A shade is a color added with black</string>
                                     <constraint firstItem="l31-K0-sl3" firstAttribute="leading" secondItem="huy-42-6Ib" secondAttribute="trailing" constant="15" id="xjy-TT-Yc1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-8S-DIj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-8S-DIj" customClass="TemplateView" customModule="Kalern" customModuleProvider="target">
                                 <rect key="frame" x="27" y="98" width="336" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -1335,6 +1335,9 @@ A shade is a color added with black</string>
                         <outlet property="btnShowObject" destination="f9b-Vm-c0i" id="jRP-Ev-PxX"/>
                         <outlet property="viewBackground" destination="dfe-zU-rja" id="0A8-4p-W3O"/>
                         <outlet property="viewTemplate" destination="fJ2-8S-DIj" id="9fE-DJ-8u0"/>
+                        <outletCollection property="colorPaletteView" destination="EBe-a1-JoI" collectionClass="NSMutableArray" id="arg-LW-iBz"/>
+                        <outletCollection property="colorPaletteView" destination="Fuw-IY-qu0" collectionClass="NSMutableArray" id="qR8-EB-OtJ"/>
+                        <outletCollection property="colorPaletteView" destination="drc-tT-RvB" collectionClass="NSMutableArray" id="686-yU-BBn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLB-4G-Y9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
