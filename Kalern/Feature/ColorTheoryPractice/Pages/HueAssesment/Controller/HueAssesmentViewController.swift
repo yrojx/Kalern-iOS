@@ -11,7 +11,7 @@ class HueAssesmentViewController: UIViewController {
 
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var colorWheelView: ColorWheelView!
-    @IBOutlet var colorPallete: [ColorDotView]!
+    @IBOutlet var colorPalleteView: [ColorDotView]!
     @IBOutlet weak var assesmentImageView: UIImageView!
     @IBOutlet weak var colorHueTheoryTitleLabel: UILabel!
     @IBOutlet weak var colorPalleteContainer: UIView!
@@ -19,6 +19,8 @@ class HueAssesmentViewController: UIViewController {
     var index: Int = 0
     
     var defaultColorPallete = UIColor(red: 227, green: 228, blue: 230, alpha: 1)
+    
+    let repository = ColorTheoryPracticeRepository.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +31,16 @@ class HueAssesmentViewController: UIViewController {
             colorDotView.colorDot = ColorDot(id: idx, color: ColorWheel.colors[idx] ?? .red)
         }
         
-        for (idx, colorDotView) in colorPallete.enumerated() {
-            colorDotView.colorDot = ColorDot(id: idx, color: defaultColorPallete)
+        for (idx, colorDotView) in colorPalleteView.enumerated() {
+            colorDotView.tag = idx
             colorDotView.addGestureRecognizer(setColorPalleteGesture())
         }
         
-        colorHueTheoryTitleLabel.text = ColorTheoryPracticeRepository.shared.pickedColorHueTheory?.type.rawValue
+        colorHueTheoryTitleLabel.text = repository.pickedColorHueTheory?.type.rawValue
         
-        setColorPalleteBorder()
+        repository.colorPallete?.initColorPalleteView(colorDotViews: colorPalleteView)
+        
+        repository.colorPallete?.setColorPalleteBorder(activeIndex: index, colorPalleteVeiw: colorPalleteView)
     
     }
     
@@ -48,17 +52,7 @@ class HueAssesmentViewController: UIViewController {
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
         index = sender?.view?.tag ?? 0
-        setColorPalleteBorder()
-    }
-    
-    private func setColorPalleteBorder() {
-        for (idx, colorDot) in colorPallete.enumerated() {
-            if idx == index {
-                colorDot.colorDotView.layer.borderWidth = 5
-            } else {
-                colorDot.colorDotView.layer.borderWidth = 0
-            }
-        }
+        repository.colorPallete?.setColorPalleteBorder(activeIndex: index, colorPalleteVeiw: colorPalleteView)
     }
     
     @IBAction func btnNextTapped(_ sender: UIButton) {
@@ -79,8 +73,8 @@ class HueAssesmentViewController: UIViewController {
     
     func assesColorTheory() {
         var isFilledAll = true
-        for colorDotView in colorPallete {
-            if colorDotView.colorDot?.color == defaultColorPallete {
+        for colorDotView in colorPalleteView {
+            if colorDotView.colorDot?.color == repository.defaultColorPallete {
                 isFilledAll = false
             }
         }
@@ -93,17 +87,23 @@ class HueAssesmentViewController: UIViewController {
     private func checkColorTheory() {
         var flag = false
         var pickedColorPair = [Int]()
-        for colorDot in colorPallete {
-            pickedColorPair.append(colorDot.colorDot?.id ?? 0)
+        
+        // tambah satu karena di db index mulai dari 1
+        for colorDot in colorPalleteView {
+            guard let colorDotId = colorDot.colorDot?.id else {
+                return
+            }
+            pickedColorPair.append(colorDotId + 1)
         }
         
         pickedColorPair.sort()
         
-        if let colorPairs = ColorTheoryPracticeRepository.shared.pickedColorHueTheory?.colorPairs {
+        print(pickedColorPair)
+        
+        if let colorPairs = repository.pickedColorHueTheory?.colorPairs {
             for colorPair in colorPairs {
                 if colorPair == pickedColorPair {
                     flag = true
-                    
                     break
                 }
             }
@@ -124,9 +124,13 @@ class HueAssesmentViewController: UIViewController {
 extension HueAssesmentViewController: ColorWheelViewDelegate {
     func colorDotView(id: Int, color: UIColor) {
         if index >= 0 && index <= 2 {
-            colorPallete[index].colorDot? = ColorDot(id: id, color: color)
+            colorPalleteView[index].colorDot? = ColorDot(id: id, color: color)
+            repository.editColorInPallete(colorIndex: index, color: color)
+            
             index += 1
-            setColorPalleteBorder()
+            
+            repository.colorPallete?.setColorPalleteBorder(activeIndex: index, colorPalleteVeiw: colorPalleteView)
+            
             assesColorTheory()
         }
     }
