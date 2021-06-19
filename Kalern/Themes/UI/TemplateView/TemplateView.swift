@@ -26,6 +26,7 @@ class TemplateView: UIView {
     ]
     
     @IBOutlet var objectViews: [UIView]!
+    @IBOutlet var viewBackgroundImage: [UIView]!
     
     let nibName = "TemplateView"
     
@@ -43,9 +44,17 @@ class TemplateView: UIView {
         templateView = self.loadViewFromNib(nibName: nibName)
         templateView.frame = self.bounds
         
+        objectViews[7].layer.borderWidth = 5
+        objectViews[7].layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        
+        print(objectViews[7].tag)
+        
+        for view in viewBackgroundImage{
+            view.layer.cornerRadius = 10
+        }
+        
         self.addSubview(templateView)
     }
-    
     
     func setObjectViewGesture() -> UITapGestureRecognizer {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
