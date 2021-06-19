@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIColor {
-    func getRGB() -> (Int, Int, Int, Int) {
+    func getRGB() -> (Int, Int, Int, Int, [Int]) {
         var fRed : CGFloat = 0
         var fGreen : CGFloat = 0
         var fBlue : CGFloat = 0
@@ -19,9 +19,9 @@ extension UIColor {
             let iBlue = Int(fBlue * 255.0)
             let iAlpha = Int(fAlpha * 255.0)
 
-            return (red: iRed, green: iGreen, blue: iBlue, alpha: iAlpha)
+            return (red: iRed, green: iGreen, blue: iBlue, alpha: iAlpha, [iRed, iGreen, iBlue])
         } else {
-            return (0, 0, 0, 0)
+            return (0, 0, 0, 0, [])
         }
     }
 }
