@@ -101,6 +101,7 @@
                     <connections>
                         <outlet property="btnStartLearning" destination="KP8-f1-yq0" id="NA6-CY-deQ"/>
                         <outlet property="btnStartUIPractice" destination="zS5-fF-svt" id="ssW-f5-fvy"/>
+                        <outlet property="colorWheelView" destination="5IB-3z-8GG" id="eWc-rh-emM"/>
                         <segue destination="Thi-yv-Xum" kind="show" identifier="goToColorHueTheory" id="Uqm-42-zjX"/>
                     </connections>
                 </viewController>
@@ -159,6 +160,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="previousBtnPressed:" destination="Thi-yv-Xum" eventType="touchUpInside" id="0gY-X9-1Gi"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdp-PA-90r">
                                         <rect key="frame" x="52" y="0.0" width="218" height="36"/>
@@ -187,6 +191,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="chevron.right.circle.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextBtnPressed:" destination="Thi-yv-Xum" eventType="touchUpInside" id="EdT-fY-t9f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -212,6 +219,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="btnPracticeTheory" destination="tMc-Y6-uiU" id="dOy-ME-gtl"/>
+                        <outlet property="colorHueTheoryDesc" destination="cEK-8l-YnT" id="a94-G4-SAG"/>
+                        <outlet property="colorHueTheoryImage" destination="cAV-xu-kCf" id="TqM-WQ-aDE"/>
+                        <outlet property="colorHueTheoryTitle" destination="uMV-Hf-vtT" id="IXx-LI-wHW"/>
                         <outlet property="viewTitle" destination="Wdp-PA-90r" id="S9e-dF-IHo"/>
                         <segue destination="3eZ-Jd-Yga" kind="show" identifier="goToHueAssesment" id="Jan-6y-D3H"/>
                     </connections>
@@ -349,8 +359,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="QSo-8I-Opt"/>
                     <connections>
+                        <outlet property="assesmentImageView" destination="TRX-L1-aAy" id="MQN-l5-1OY"/>
                         <outlet property="btnNext" destination="Hfq-AI-M6b" id="sbn-Zs-SGB"/>
+                        <outlet property="colorHueTheoryTitleLabel" destination="szH-hN-hXM" id="rOw-y6-er8"/>
                         <outlet property="colorPalleteContainer" destination="pup-me-mKD" id="ovN-2A-RVx"/>
+                        <outlet property="colorWheelView" destination="UwD-SI-fOk" id="F7i-Nd-5gT"/>
+                        <outletCollection property="colorPalleteView" destination="Br3-1I-Gcc" collectionClass="NSMutableArray" id="b8p-Kg-eqf"/>
+                        <outletCollection property="colorPalleteView" destination="t9C-9s-yQI" collectionClass="NSMutableArray" id="zhS-9h-hYW"/>
+                        <outletCollection property="colorPalleteView" destination="7RI-sV-Hup" collectionClass="NSMutableArray" id="GZh-TY-4oU"/>
                         <segue destination="hO8-HI-vTY" kind="show" identifier="goToColorPalette" id="ONh-CE-jiO"/>
                     </connections>
                 </viewController>
@@ -358,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="1787.6923076923076" y="111.61137440758293"/>
         </scene>
-        <!--Color Palette View Controller-->
+        <!--Color Hierarchy View Controller-->
         <scene sceneID="pWr-0c-JLc">
             <objects>
-                <viewController id="hO8-HI-vTY" customClass="ColorPaletteViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hO8-HI-vTY" customClass="ColorHierarchyViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0NH-ZR-XIs">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,8 +406,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="btnNextTapped:" destination="hO8-HI-vTY" eventType="touchUpInside" id="kg3-M6-bcv"/>
                                     <action selector="btnNextTapped:" destination="3eZ-Jd-Yga" eventType="touchUpInside" id="pOG-Jy-arp"/>
-                                    <action selector="btnNextTapped:" destination="hO8-HI-vTY" eventType="touchUpInside" id="zdH-W9-9Vo"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEz-b4-aZF">
@@ -590,8 +606,13 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="Kxb-AS-TVJ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnNext" destination="kh0-lw-m7A" id="7fV-Ya-xZ5"/>
-                        <outlet property="viewPrimary" destination="ePM-rL-CkZ" id="74Y-bu-Tia"/>
+                        <outlet property="btnNext" destination="kh0-lw-m7A" id="Kj6-of-S8b"/>
+                        <outletCollection property="colorHierarchyViews" destination="ePM-rL-CkZ" collectionClass="NSMutableArray" id="QEE-t9-Epv"/>
+                        <outletCollection property="colorHierarchyViews" destination="SmX-rR-Fde" collectionClass="NSMutableArray" id="yvc-FH-dDA"/>
+                        <outletCollection property="colorHierarchyViews" destination="V6c-Ik-vE2" collectionClass="NSMutableArray" id="89z-Tg-HwS"/>
+                        <outletCollection property="colorPallete" destination="Wt0-yf-Rzc" collectionClass="NSMutableArray" id="aXL-cf-2yI"/>
+                        <outletCollection property="colorPallete" destination="Yev-8q-w2Q" collectionClass="NSMutableArray" id="bzf-Oe-t7U"/>
+                        <outletCollection property="colorPallete" destination="G9T-Ak-kFw" collectionClass="NSMutableArray" id="g6s-OG-Agf"/>
                         <segue destination="to4-ek-sWQ" kind="show" identifier="goToShadesTint" id="8cS-88-iay"/>
                     </connections>
                 </viewController>
@@ -884,7 +905,21 @@ A shade is a color added with black</string>
                     <navigationItem key="navigationItem" id="wDC-Rg-gR8"/>
                     <connections>
                         <outlet property="btnNext" destination="cGw-Mc-HVi" id="6CB-ZT-BTG"/>
+                        <outlet property="colorHueImageView" destination="zi8-U3-bEP" id="ogW-bp-gkH"/>
                         <outlet property="viewBackground" destination="63D-Mx-pTn" id="eGo-Hw-42n"/>
+                        <outletCollection property="colorPalleteView" destination="zaN-bm-eyy" collectionClass="NSMutableArray" id="g7t-nH-SFL"/>
+                        <outletCollection property="colorPalleteView" destination="b07-mC-6jT" collectionClass="NSMutableArray" id="fiM-Dj-yTl"/>
+                        <outletCollection property="colorPalleteView" destination="z1j-hn-TKe" collectionClass="NSMutableArray" id="Yeh-hU-hn9"/>
+                        <outletCollection property="tintViews" destination="BFr-bs-zDe" collectionClass="NSMutableArray" id="XR3-Oa-HK2"/>
+                        <outletCollection property="tintViews" destination="Dwn-B7-DvU" collectionClass="NSMutableArray" id="wRm-3z-QgK"/>
+                        <outletCollection property="tintViews" destination="UCP-mf-4Kx" collectionClass="NSMutableArray" id="CQS-SL-kuD"/>
+                        <outletCollection property="tintViews" destination="t24-r4-hS3" collectionClass="NSMutableArray" id="1P5-1v-gS6"/>
+                        <outletCollection property="tintViews" destination="w3S-yF-G7h" collectionClass="NSMutableArray" id="e7s-fA-97M"/>
+                        <outletCollection property="shadeViews" destination="TgU-7l-0MG" collectionClass="NSMutableArray" id="m6I-tm-12P"/>
+                        <outletCollection property="shadeViews" destination="fDv-Xa-hI5" collectionClass="NSMutableArray" id="pEp-W4-Q3H"/>
+                        <outletCollection property="shadeViews" destination="A9c-Wk-ThD" collectionClass="NSMutableArray" id="A3L-Zh-WvH"/>
+                        <outletCollection property="shadeViews" destination="zCw-Lf-GBL" collectionClass="NSMutableArray" id="eyc-gY-Xsu"/>
+                        <outletCollection property="shadeViews" destination="loa-3z-C1l" collectionClass="NSMutableArray" id="bNV-tM-KKD"/>
                         <segue destination="NaF-Wa-BDP" kind="show" identifier="goToInstructions" id="icw-KK-A6H"/>
                     </connections>
                 </viewController>
