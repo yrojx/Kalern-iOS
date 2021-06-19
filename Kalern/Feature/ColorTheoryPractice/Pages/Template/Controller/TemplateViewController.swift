@@ -9,15 +9,21 @@ import UIKit
 
 class TemplateViewController: UIViewController {
 
-    @IBOutlet weak var viewTemplate: UIView!
+    @IBOutlet weak var viewTemplate: TemplateView!
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var btnShowObject: UIButton!
     @IBOutlet var colorPaletteView: [ColorDotView]!
     
     let repository = ColorTheoryPracticeRepository.shared
     
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for view in viewTemplate.objectViews{
+            view.addGestureRecognizer(setTemplateGesture())
+        }
         
         repository.modifiedColorPallete?.initColorPalleteView(colorDotViews: colorPaletteView)
     }
@@ -28,7 +34,20 @@ class TemplateViewController: UIViewController {
     }
     
     @objc func handleTapTemplate(_ sender: UITapGestureRecognizer? = nil){
-        
+        print(sender?.view?.tag)
+        viewTemplate.activeObjectviewIndex = sender?.view?.tag ?? 1
+        setObjectsViewBorder()
+    }
+    
+    func setObjectsViewBorder(){
+        for (idx, view) in viewTemplate.objectViews.enumerated() {
+            if idx == viewTemplate.activeObjectviewIndex{
+                view.layer.borderWidth = 5
+                view.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            } else {
+                view.layer.borderWidth = 0
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
