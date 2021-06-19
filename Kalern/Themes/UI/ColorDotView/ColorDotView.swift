@@ -20,7 +20,7 @@ class ColorDotView: UIView {
             guard let color = colorDot?.color else {
                 return colorDotView.backgroundColor = .red
             }
-            print(color)
+
             colorDotView.backgroundColor = color
         }
     }
