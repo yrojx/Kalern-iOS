@@ -43,13 +43,18 @@ class TemplateViewController: UIViewController {
         
         self.navigationItem.title = "UI Color Practice"
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDone(sender:)))
     }
     
     func setColorPalleteGesture() -> UITapGestureRecognizer {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         
         return tapRecognizer
+    }
+    
+    @objc func handleDone(sender: UIBarButtonItem) {
+        colorBalanceAssessment()
+        print(repository.colorBalancePercentage)
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
