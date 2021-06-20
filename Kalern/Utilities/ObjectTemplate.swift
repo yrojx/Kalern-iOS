@@ -9,6 +9,7 @@ import Foundation
 
 struct ObjectTemplate {
     let objectTemplateType: ObjectTemplateType
+    let objectUIViewType: ObjectUIViewType
 }
 
 enum ObjectTemplateType {
@@ -28,4 +29,10 @@ enum ObjectTemplateType {
                 return 3.3
         }
     }
+}
+
+enum ObjectUIViewType {
+    case image
+    case text
+    case basicView
 }
