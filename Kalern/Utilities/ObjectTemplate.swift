@@ -17,16 +17,16 @@ enum ObjectTemplateType {
     case secondary
     case accent
     
-    func getScore() -> Float {
+    func getScore() -> Int {
         switch self {
             case .primary:
-                return 60.0
+                return 60
                 
             case .secondary:
-                return 5.0
+                return 5
                 
             case .accent:
-                return 3.3
+                return 3
         }
     }
 }
