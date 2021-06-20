@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemplateView" customModule="Kalern" customModuleProvider="target">
             <connections>
+                <outlet property="noteLabel" destination="7nQ-Ei-XQt" id="4iT-fr-PXc"/>
                 <outlet property="templateView" destination="iN0-l3-epB" id="QIC-O7-I84"/>
                 <outletCollection property="viewBackgroundImage" destination="cxz-tc-wXZ" collectionClass="NSMutableArray" id="bnz-w3-bRv"/>
                 <outletCollection property="viewBackgroundImage" destination="uNS-rP-c2x" collectionClass="NSMutableArray" id="1Jl-Ct-MgG"/>
@@ -22,10 +23,14 @@
                 <outletCollection property="objectViews" destination="G1s-Uh-Q2s" collectionClass="NSMutableArray" id="3iT-Ut-0T2"/>
                 <outletCollection property="objectViews" destination="YZn-rC-yRT" collectionClass="NSMutableArray" id="Dma-Re-MyO"/>
                 <outletCollection property="objectViews" destination="rt8-Wp-lAY" collectionClass="NSMutableArray" id="wbQ-Vg-kfC"/>
-                <outletCollection property="objectViews" destination="MbT-Za-Dxt" collectionClass="NSMutableArray" id="OtQ-3d-64e"/>
-                <outletCollection property="objectViews" destination="fAe-Mo-9Ur" collectionClass="NSMutableArray" id="HrU-iy-276"/>
-                <outletCollection property="objectViews" destination="FcK-Oa-JPI" collectionClass="NSMutableArray" id="SUX-8C-4bA"/>
-                <outletCollection property="objectViews" destination="etO-Cm-iJU" collectionClass="NSMutableArray" id="MeM-2t-xG5"/>
+                <outletCollection property="objectHelperViews" destination="wxi-YV-QoI" collectionClass="NSMutableArray" id="ESA-SD-yN1"/>
+                <outletCollection property="objectHelperViews" destination="Wbm-Iw-OVA" collectionClass="NSMutableArray" id="9jG-KW-gka"/>
+                <outletCollection property="objectHelperViews" destination="I96-5E-nhr" collectionClass="NSMutableArray" id="V1d-NJ-aOm"/>
+                <outletCollection property="objectHelperViews" destination="AlY-B9-Idt" collectionClass="NSMutableArray" id="SvD-oB-nKx"/>
+                <outletCollection property="objectViews" destination="fAe-Mo-9Ur" collectionClass="NSMutableArray" id="v7K-Jm-iag"/>
+                <outletCollection property="objectViews" destination="MbT-Za-Dxt" collectionClass="NSMutableArray" id="g25-hL-lgU"/>
+                <outletCollection property="objectViews" destination="etO-Cm-iJU" collectionClass="NSMutableArray" id="AA8-k0-4fR"/>
+                <outletCollection property="objectViews" destination="FcK-Oa-JPI" collectionClass="NSMutableArray" id="hr8-P4-I2e"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -68,7 +73,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="fAe-Mo-9Ur" firstAttribute="leading" secondItem="I96-5E-nhr" secondAttribute="leading" id="0t8-AQ-uvD"/>
                         <constraint firstAttribute="trailing" secondItem="fAe-Mo-9Ur" secondAttribute="trailing" id="LBT-3X-geE"/>
@@ -86,7 +91,7 @@
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Owk-dL-5Ss"/>
                         <constraint firstAttribute="width" constant="35" id="T6L-V7-N9R"/>
@@ -348,7 +353,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.9215573668" green="0.92156273129999999" blue="0.92157685759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="FcK-Oa-JPI" firstAttribute="centerY" secondItem="wxi-YV-QoI" secondAttribute="centerY" id="ktO-lp-3T9"/>
                                                 <constraint firstItem="FcK-Oa-JPI" firstAttribute="centerX" secondItem="wxi-YV-QoI" secondAttribute="centerX" id="n21-rf-PRY"/>
