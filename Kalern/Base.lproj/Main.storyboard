@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMN-19-U4O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -337,24 +337,36 @@
                                     <constraint firstAttribute="bottom" secondItem="7RI-sV-Hup" secondAttribute="bottom" constant="13" id="tpE-iJ-fcI"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khI-G0-Diu">
+                                <rect key="frame" x="117" y="612" width="156" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="L1a-2D-SgY"/>
+                                    <constraint firstAttribute="height" constant="21" id="uea-D4-wgf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vsj-3V-SsP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="szH-hN-hXM" firstAttribute="top" secondItem="Vsj-3V-SsP" secondAttribute="top" constant="23" id="2lB-A4-UEc"/>
                             <constraint firstItem="szH-hN-hXM" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="34" id="2ml-ja-WeC"/>
+                            <constraint firstItem="khI-G0-Diu" firstAttribute="top" secondItem="pup-me-mKD" secondAttribute="bottom" constant="16" id="4W7-Qo-fBD"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="37.670000000000002" id="4gu-6N-w6p"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="6iN-Ha-YZS"/>
                             <constraint firstItem="UwD-SI-fOk" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="AvF-dW-Doy"/>
                             <constraint firstItem="Vsj-3V-SsP" firstAttribute="bottom" secondItem="Hfq-AI-M6b" secondAttribute="bottom" constant="38.329999999999998" id="BUj-d0-itp"/>
-                            <constraint firstItem="lUB-uv-fcn" firstAttribute="top" secondItem="pup-me-mKD" secondAttribute="bottom" constant="49" id="Par-Yv-9lb"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="37.670000000000002" id="TVX-Rx-uPW"/>
                             <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="25" id="VjO-g2-ukF"/>
                             <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="25" id="Yuy-WL-dBX"/>
                             <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="szH-hN-hXM" secondAttribute="trailing" constant="34" id="art-ks-uGM"/>
                             <constraint firstItem="Hfq-AI-M6b" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="b9V-2p-ZwG"/>
                             <constraint firstItem="lUB-uv-fcn" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="cFw-Uf-hMj"/>
+                            <constraint firstItem="lUB-uv-fcn" firstAttribute="top" secondItem="khI-G0-Diu" secondAttribute="bottom" constant="12" id="cJP-DN-tFZ"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="koI-CP-AFS"/>
+                            <constraint firstItem="khI-G0-Diu" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="wGc-Co-IiB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QSo-8I-Opt"/>
@@ -364,6 +376,8 @@
                         <outlet property="colorHueTheoryTitleLabel" destination="szH-hN-hXM" id="rOw-y6-er8"/>
                         <outlet property="colorPalleteContainer" destination="pup-me-mKD" id="ovN-2A-RVx"/>
                         <outlet property="colorWheelView" destination="UwD-SI-fOk" id="F7i-Nd-5gT"/>
+                        <outlet property="descResult" destination="lUB-uv-fcn" id="jIQ-Ov-lfa"/>
+                        <outlet property="titleResult" destination="khI-G0-Diu" id="Wed-2W-OZS"/>
                         <outletCollection property="colorPalleteView" destination="Br3-1I-Gcc" collectionClass="NSMutableArray" id="b8p-Kg-eqf"/>
                         <outletCollection property="colorPalleteView" destination="t9C-9s-yQI" collectionClass="NSMutableArray" id="zhS-9h-hYW"/>
                         <outletCollection property="colorPalleteView" destination="7RI-sV-Hup" collectionClass="NSMutableArray" id="GZh-TY-4oU"/>
