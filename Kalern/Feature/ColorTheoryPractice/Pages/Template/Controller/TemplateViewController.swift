@@ -18,7 +18,6 @@ class TemplateViewController: UIViewController {
     
     var index = 0
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,13 +42,19 @@ class TemplateViewController: UIViewController {
         
         self.navigationItem.title = "UI Color Practice"
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDone(sender:)))
+        navigationItem.rightBarButtonItem?.isEnabled = false
     }
     
     func setColorPalleteGesture() -> UITapGestureRecognizer {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         
         return tapRecognizer
+    }
+    
+    @objc func handleDone(sender: UIBarButtonItem) {
+        colorBalanceAssessment()
+        print(repository.colorBalancePercentage)
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
@@ -92,7 +97,21 @@ class TemplateViewController: UIViewController {
                 break
         }
         
+        checkObjectViewsCompletition()
+    }
+    
+    private func checkObjectViewsCompletition() {
+        var flag = true
+        for objectTemplate in templateView.objectTemplate {
+            if objectTemplate.objectColorHierarchy == nil {
+                flag = false
+                break
+            }
+        }
         
+        if flag {
+            navigationItem.rightBarButtonItem?.isEnabled = true
+        }
     }
     
     @IBAction func showObjectBtnTapped(_ sender: UIButton) {
