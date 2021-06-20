@@ -8,8 +8,8 @@
 import UIKit
 
 class TemplateViewController: UIViewController {
-
-    @IBOutlet weak var viewTemplate: TemplateView!
+    
+    @IBOutlet weak var templateView: TemplateView!
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var btnShowObject: UIButton!
     @IBOutlet var colorPaletteView: [ColorDotView]!
@@ -18,42 +18,22 @@ class TemplateViewController: UIViewController {
     
     var index = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for view in viewTemplate.objectViews{
-            view.addGestureRecognizer(setTemplateGesture())
-        }
-        
         repository.modifiedColorPallete?.initColorPalleteView(colorDotViews: colorPaletteView)
-    }
-    
-    func setTemplateGesture() -> UITapGestureRecognizer{
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapTemplate(_:)))
-        return tapRecognizer
-    }
-    
-    @objc func handleTapTemplate(_ sender: UITapGestureRecognizer? = nil){
-        print(sender?.view?.tag)
-        viewTemplate.activeObjectviewIndex = sender?.view?.tag ?? 1
-        setObjectsViewBorder()
-    }
-    
-    func setObjectsViewBorder(){
-        for (idx, view) in viewTemplate.objectViews.enumerated() {
-            if idx == viewTemplate.activeObjectviewIndex{
-                view.layer.borderWidth = 5
-                view.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-            } else {
-                view.layer.borderWidth = 0
-            }
+        
+        for colorDot in colorPaletteView {
+            colorDot.addGestureRecognizer(setColorPalleteGesture())
         }
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
-        viewTemplate.layer.cornerRadius = 10
-        viewTemplate.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        viewTemplate.layer.borderWidth = 2
+        templateView.layer.cornerRadius = 10
+        templateView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        templateView.layer.borderWidth = 2
         
         viewBackground.layer.cornerRadius = 10
         viewBackground.layer.borderWidth = 1
@@ -64,6 +44,50 @@ class TemplateViewController: UIViewController {
         self.navigationItem.title = "UI Color Practice"
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: nil, action: nil)
+    }
+    
+    func setColorPalleteGesture() -> UITapGestureRecognizer {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         
+        return tapRecognizer
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        index = sender?.view?.tag ?? 0
+        
+        if templateView.activeObjectviewIndex == 9 {
+            let objectView = templateView.objectViews[templateView.activeObjectviewIndex].superview?.superview?.subviews[1] as? UILabel
+            objectView?.textColor = repository.modifiedColorPallete?.colors[index]
+        }
+        
+        switch templateView.objectTemplate[templateView.activeObjectviewIndex].objectUIViewType {
+        case .basicView:
+            templateView.objectViews[templateView.activeObjectviewIndex].backgroundColor = repository.modifiedColorPallete?.colors[index]
+            break
+            
+        case .image:
+            templateView.objectViews[templateView.activeObjectviewIndex].tintColor = repository.modifiedColorPallete?.colors[index]
+            break
+            
+        case .text:
+            let objectView = templateView.objectViews[templateView.activeObjectviewIndex] as? UILabel
+            objectView?.textColor = repository.modifiedColorPallete?.colors[index]
+            break
+        }
+        
+    }
+    
+    @IBAction func showObjectBtnTapped(_ sender: UIButton) {
+        if templateView.showObjectFlag {
+            for objectView in templateView.objectViews {
+                objectView.layer.borderWidth = 0
+            }
+        } else {
+            for objectView in templateView.objectViews {
+                objectView.layer.borderWidth = 5
+                objectView.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            }
+        }
+        templateView.showObjectFlag = !templateView.showObjectFlag
     }
 }

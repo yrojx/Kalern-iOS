@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMN-19-U4O">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1195,7 +1195,7 @@ A shade is a color added with black</string>
                                             <constraint firstAttribute="height" constant="42" id="Ygh-jY-oWS"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-IY-qu0" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-IY-qu0" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="81" y="9" width="42" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1205,7 +1205,7 @@ A shade is a color added with black</string>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="u7O-Gv-BHY"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drc-tT-RvB" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drc-tT-RvB" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="140" y="9" width="42" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1271,6 +1271,7 @@ A shade is a color added with black</string>
                                             <action selector="btnNextTapped:" destination="to4-ek-sWQ" eventType="touchUpInside" id="0wo-Tq-E52"/>
                                             <action selector="btnNextTapped:" destination="hO8-HI-vTY" eventType="touchUpInside" id="6VB-l8-WtN"/>
                                             <action selector="btnNextTapped:" destination="3eZ-Jd-Yga" eventType="touchUpInside" id="v1H-tB-6HT"/>
+                                            <action selector="showObjectBtnTapped:" destination="DMN-19-U4O" eventType="touchUpInside" id="xpK-hL-zX8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1333,8 +1334,8 @@ A shade is a color added with black</string>
                     <navigationItem key="navigationItem" id="qJG-k9-zcv"/>
                     <connections>
                         <outlet property="btnShowObject" destination="f9b-Vm-c0i" id="jRP-Ev-PxX"/>
+                        <outlet property="templateView" destination="fJ2-8S-DIj" id="LR8-q0-SbO"/>
                         <outlet property="viewBackground" destination="dfe-zU-rja" id="0A8-4p-W3O"/>
-                        <outlet property="viewTemplate" destination="fJ2-8S-DIj" id="9fE-DJ-8u0"/>
                         <outletCollection property="colorPaletteView" destination="EBe-a1-JoI" collectionClass="NSMutableArray" id="arg-LW-iBz"/>
                         <outletCollection property="colorPaletteView" destination="Fuw-IY-qu0" collectionClass="NSMutableArray" id="qR8-EB-OtJ"/>
                         <outletCollection property="colorPaletteView" destination="drc-tT-RvB" collectionClass="NSMutableArray" id="686-yU-BBn"/>
