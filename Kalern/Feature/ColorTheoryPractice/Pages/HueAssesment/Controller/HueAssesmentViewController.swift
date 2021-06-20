@@ -15,6 +15,10 @@ class HueAssesmentViewController: UIViewController {
     @IBOutlet weak var assesmentImageView: UIImageView!
     @IBOutlet weak var colorHueTheoryTitleLabel: UILabel!
     @IBOutlet weak var colorPalleteContainer: UIView!
+    @IBOutlet weak var titleResult: UILabel!
+    @IBOutlet weak var descResult: UILabel!
+    
+    var colorHueAssessment = ColorHueAssessment.getResultData()
     
     var index: Int = 0
     
@@ -60,6 +64,8 @@ class HueAssesmentViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        titleResult.isHidden = true
+        
         btnNext.layer.cornerRadius = 10
         
         colorPalleteContainer.layer.cornerRadius = 10
@@ -111,9 +117,15 @@ class HueAssesmentViewController: UIViewController {
             btnNext.isEnabled = true
             assesmentImageView.image = UIImage(systemName: "checkmark.circle.fill")
             assesmentImageView.tintColor = #colorLiteral(red: 0, green: 0.5764705882, blue: 0, alpha: 1)
+            titleResult.isHidden = false
+            titleResult.text = colorHueAssessment[0].titleResult
+            descResult.text = colorHueAssessment[0].descResult
         } else {
             assesmentImageView.image = UIImage(systemName: "x.circle.fill")
             assesmentImageView.tintColor = #colorLiteral(red: 0.9921568627, green: 0.3254901961, blue: 0.03137254902, alpha: 1)
+            titleResult.isHidden = false
+            titleResult.text = colorHueAssessment[1].titleResult
+            descResult.text = colorHueAssessment[1].descResult
         }
     }
     
