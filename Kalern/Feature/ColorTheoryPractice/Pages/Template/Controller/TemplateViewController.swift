@@ -60,20 +60,38 @@ class TemplateViewController: UIViewController {
             objectView?.textColor = repository.modifiedColorPallete?.colors[index]
         }
         
-        switch templateView.objectTemplate[templateView.activeObjectviewIndex].objectUIViewType {
-        case .basicView:
-            templateView.objectViews[templateView.activeObjectviewIndex].backgroundColor = repository.modifiedColorPallete?.colors[index]
-            break
+        switch index {
+            case 0:
+                templateView.objectTemplate[templateView.activeObjectviewIndex].objectColorHierarchy = .primary
+                break
             
-        case .image:
-            templateView.objectViews[templateView.activeObjectviewIndex].tintColor = repository.modifiedColorPallete?.colors[index]
-            break
-            
-        case .text:
-            let objectView = templateView.objectViews[templateView.activeObjectviewIndex] as? UILabel
-            objectView?.textColor = repository.modifiedColorPallete?.colors[index]
-            break
+            case 1:
+                templateView.objectTemplate[templateView.activeObjectviewIndex].objectColorHierarchy = .secondary
+                break
+                
+            case 2:
+                templateView.objectTemplate[templateView.activeObjectviewIndex].objectColorHierarchy = .accent
+                break
+                
+            default:
+                break
         }
+        
+        switch templateView.objectTemplate[templateView.activeObjectviewIndex].objectUIViewType {
+            case .basicView:
+                templateView.objectViews[templateView.activeObjectviewIndex].backgroundColor = repository.modifiedColorPallete?.colors[index]
+                break
+                
+            case .image:
+                templateView.objectViews[templateView.activeObjectviewIndex].tintColor = repository.modifiedColorPallete?.colors[index]
+                break
+                
+            case .text:
+                let objectView = templateView.objectViews[templateView.activeObjectviewIndex] as? UILabel
+                objectView?.textColor = repository.modifiedColorPallete?.colors[index]
+                break
+        }
+        
         
     }
     

@@ -10,6 +10,7 @@ import Foundation
 struct ObjectTemplate {
     let objectTemplateType: ObjectTemplateType
     let objectUIViewType: ObjectUIViewType
+    var objectColorHierarchy: ObjectColorHierarchy?
 }
 
 enum ObjectTemplateType {
@@ -35,4 +36,10 @@ enum ObjectUIViewType {
     case image
     case text
     case basicView
+}
+
+enum ObjectColorHierarchy {
+    case primary
+    case secondary
+    case accent
 }

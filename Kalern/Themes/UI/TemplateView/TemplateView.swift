@@ -15,7 +15,7 @@ class TemplateView: UIView {
     
     var showObjectFlag = false
     
-    let objectTemplate: [ObjectTemplate] = [
+    var objectTemplate: [ObjectTemplate] = [
         ObjectTemplate(objectTemplateType: .primary, objectUIViewType: .basicView),
         ObjectTemplate(objectTemplateType: .secondary, objectUIViewType: .basicView),
         ObjectTemplate(objectTemplateType: .secondary, objectUIViewType: .basicView),
