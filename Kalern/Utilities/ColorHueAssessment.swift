@@ -11,11 +11,11 @@ struct ColorHueAssessment{
     var titleResult: String
     var descResult: String
     
-    static func getResultData() -> [ColorHueAssessment]{
+    static func getResultData(pickedColorHueTheory: ColorHueTheoryType) -> [ColorHueAssessment]{
         var data: [ColorHueAssessment] = []
         
-        data.append(ColorHueAssessment(titleResult: "Good Job", descResult: "Your palette is a split complimentary"))
-        data.append(ColorHueAssessment(titleResult: "Try Again", descResult: "Your palette is not a split complimentary."))
+        data.append(ColorHueAssessment(titleResult: "Good Job", descResult: "Your palette is a \(pickedColorHueTheory.rawValue)."))
+        data.append(ColorHueAssessment(titleResult: "Try Again", descResult: "Your palette is not a \(pickedColorHueTheory.rawValue)."))
         
         return data
     }

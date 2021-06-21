@@ -18,13 +18,13 @@ class HueAssesmentViewController: UIViewController {
     @IBOutlet weak var titleResult: UILabel!
     @IBOutlet weak var descResult: UILabel!
     
-    var colorHueAssessment = ColorHueAssessment.getResultData()
-    
     var index: Int = 0
     
     var defaultColorPallete = UIColor(red: 227, green: 228, blue: 230, alpha: 1)
     
     let repository = ColorTheoryPracticeRepository.shared
+    
+    var colorHueAssessment = ColorHueAssessment.getResultData(pickedColorHueTheory: .triadic)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,9 +66,11 @@ class HueAssesmentViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         titleResult.isHidden = true
         
+        colorHueAssessment = ColorHueAssessment.getResultData(pickedColorHueTheory: repository.pickedColorHueTheory?.type ?? .triadic)
+        
         btnNext.layer.cornerRadius = 10
         btnNext.isEnabled = false
-        btnNext.backgroundColor = .lightGray
+        btnNext.backgroundColor = #colorLiteral(red: 1, green: 0.6941176471, blue: 0.4078431373, alpha: 1)
         
         colorPalleteContainer.layer.cornerRadius = 10
         
