@@ -62,7 +62,7 @@ class ColorHierarchyViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         btnNext.layer.cornerRadius = 10
-        btnNext.backgroundColor = .lightGray
+        btnNext.backgroundColor = #colorLiteral(red: 1, green: 0.6941176471, blue: 0.4078431373, alpha: 1)
         
         self.navigationItem.title = "Color Palette"
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
