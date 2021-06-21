@@ -32,6 +32,20 @@ class ColorTheoryPracticeRepository {
         colorPallete = ColorPallete(colors: [defaultColorPallete, defaultColorPallete, defaultColorPallete])
     }
     
+    func dispose() {
+        colorPallete = nil
+        modifiedColorPallete = nil
+        pickedColorHueTheory = nil
+        
+        for i in 0...2 {
+            colorPallete?.colors[i] = defaultColorPallete
+        }
+        
+        shades = [[UIColor]]()
+        tints = [[UIColor]]()
+        colorBalancePercentage = [0, 0, 1]
+    }
+    
     func getColorPallete() -> ColorPallete {
         guard let safeColorPallete = colorPallete else { fatalError() }
         return safeColorPallete
