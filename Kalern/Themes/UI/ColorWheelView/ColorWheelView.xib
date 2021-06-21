@@ -29,69 +29,134 @@
             <rect key="frame" x="0.0" y="0.0" width="328" height="328"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-b8-glW" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="135" y="0.0" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-b8-glW" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="135" y="0.0" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="Jmq-3N-HHU"/>
+                        <constraint firstAttribute="height" constant="58" id="wNY-Mg-hNl"/>
+                    </constraints>
                 </view>
-                <view tag="11" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-rT-kRf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="67" y="18" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-rT-kRf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="67.5" y="18.5" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fLo-rT-kRf" secondAttribute="height" multiplier="1:1" id="pYg-cl-cu4"/>
+                    </constraints>
                 </view>
-                <view tag="10" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGV-a0-svV" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="18" y="68" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGV-a0-svV" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="18" y="68" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jGV-a0-svV" secondAttribute="height" multiplier="1:1" id="fqm-lU-VgT"/>
+                    </constraints>
                 </view>
-                <view tag="9" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-Gr-7sd" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="135" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-Gr-7sd" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="135" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="1RJ-rt-Tpp"/>
+                        <constraint firstAttribute="width" secondItem="cmJ-Gr-7sd" secondAttribute="height" multiplier="1:1" id="svw-eX-LU4"/>
+                        <constraint firstAttribute="width" constant="58" id="vQ8-WF-yIB"/>
+                    </constraints>
                 </view>
-                <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SER-RW-gJ3" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="203" y="18" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SER-RW-gJ3" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="202.5" y="18" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SER-RW-gJ3" secondAttribute="height" multiplier="1:1" id="8pF-vb-4ch"/>
+                    </constraints>
                 </view>
-                <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-NX-Zkj" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="253" y="67" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-NX-Zkj" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="252.5" y="67.5" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TU6-NX-Zkj" secondAttribute="height" multiplier="1:1" id="cWu-RS-OyG"/>
+                    </constraints>
                 </view>
-                <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-GY-r7H" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="271" y="135" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-GY-r7H" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="270" y="135" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="Sc8-9h-N0v"/>
+                        <constraint firstAttribute="width" secondItem="3YT-GY-r7H" secondAttribute="height" multiplier="1:1" id="Su9-zx-9CU"/>
+                        <constraint firstAttribute="height" constant="58" id="tf6-jm-kzU"/>
+                    </constraints>
                 </view>
-                <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1IY-cO-0RJ" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="253" y="203" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IY-cO-0RJ" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="252.5" y="203" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1IY-cO-0RJ" secondAttribute="height" multiplier="1:1" id="FMD-7z-6B3"/>
+                    </constraints>
                 </view>
-                <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDy-gL-9rY" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="203" y="252" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDy-gL-9rY" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="203" y="252.5" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pDy-gL-9rY" secondAttribute="height" multiplier="1:1" id="Eml-Pg-9xP"/>
+                    </constraints>
                 </view>
-                <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-JB-a1C" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="135" y="271" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-JB-a1C" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="135" y="270" width="58" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="Brc-25-HzX"/>
+                        <constraint firstAttribute="width" secondItem="Qhw-JB-a1C" secondAttribute="height" multiplier="1:1" id="CX7-d1-8rg"/>
+                        <constraint firstAttribute="height" constant="58" id="Fge-zZ-3yq"/>
+                    </constraints>
                 </view>
-                <view tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-d0-CWu" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="18" y="203" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-d0-CWu" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="18.5" y="203" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="L1N-d0-CWu" secondAttribute="height" multiplier="1:1" id="XvY-ZZ-YDM"/>
+                    </constraints>
                 </view>
-                <view tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-Bu-iTf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
-                    <rect key="frame" x="68" y="253" width="57.5" height="57.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-Bu-iTf" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
+                    <rect key="frame" x="67.5" y="252.5" width="57.5" height="57.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hTG-Bu-iTf" secondAttribute="height" multiplier="1:1" id="fuU-LQ-YwB"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fLo-rT-kRf" firstAttribute="centerY" secondItem="WS9-b8-glW" secondAttribute="centerY" constant="18" id="8Jv-oQ-eZd"/>
+                <constraint firstAttribute="bottom" secondItem="Qhw-JB-a1C" secondAttribute="bottom" id="AFu-NK-T7v"/>
+                <constraint firstItem="hTG-Bu-iTf" firstAttribute="width" secondItem="Qhw-JB-a1C" secondAttribute="width" multiplier="0.991379" id="B8D-RO-5F6"/>
+                <constraint firstItem="TU6-NX-Zkj" firstAttribute="width" secondItem="3YT-GY-r7H" secondAttribute="width" multiplier="0.991379" id="D9g-Q0-IAc"/>
+                <constraint firstAttribute="trailing" secondItem="SER-RW-gJ3" secondAttribute="trailing" constant="67.5" id="Die-2U-H5A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1IY-cO-0RJ" secondAttribute="bottom" constant="67.5" id="F8E-dM-2Cr"/>
+                <constraint firstItem="jGV-a0-svV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="68" id="M7D-DO-bPQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pDy-gL-9rY" secondAttribute="trailing" constant="67.5" id="NYv-Po-BOe"/>
+                <constraint firstItem="L1N-d0-CWu" firstAttribute="centerX" secondItem="cmJ-Gr-7sd" secondAttribute="centerX" constant="18" id="Ps3-Ai-WxK"/>
+                <constraint firstItem="TU6-NX-Zkj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="67.5" id="SEj-1g-Oej"/>
+                <constraint firstItem="L1N-d0-CWu" firstAttribute="width" secondItem="cmJ-Gr-7sd" secondAttribute="width" multiplier="0.991379" id="Txg-sA-ChN"/>
+                <constraint firstItem="WS9-b8-glW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XYH-Qx-p1y"/>
+                <constraint firstItem="fLo-rT-kRf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67.5" id="ZJu-c9-Fdt"/>
+                <constraint firstItem="hTG-Bu-iTf" firstAttribute="centerY" secondItem="Qhw-JB-a1C" secondAttribute="centerY" constant="-18" id="ZYP-3R-e2w"/>
+                <constraint firstItem="TU6-NX-Zkj" firstAttribute="centerX" secondItem="3YT-GY-r7H" secondAttribute="centerX" constant="-18" id="aRS-DS-Oze"/>
+                <constraint firstItem="cmJ-Gr-7sd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aWV-oE-gJa"/>
+                <constraint firstItem="fLo-rT-kRf" firstAttribute="width" secondItem="WS9-b8-glW" secondAttribute="width" multiplier="0.991379" id="b2r-oq-hrg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="L1N-d0-CWu" secondAttribute="bottom" constant="67.5" id="bV7-O2-4ac"/>
+                <constraint firstItem="jGV-a0-svV" firstAttribute="width" secondItem="cmJ-Gr-7sd" secondAttribute="width" id="bfB-Fn-EaJ"/>
+                <constraint firstItem="3YT-GY-r7H" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bhI-rF-aBG"/>
+                <constraint firstItem="jGV-a0-svV" firstAttribute="centerX" secondItem="cmJ-Gr-7sd" secondAttribute="centerX" constant="18" id="fPg-i1-QvQ"/>
+                <constraint firstItem="SER-RW-gJ3" firstAttribute="width" secondItem="WS9-b8-glW" secondAttribute="width" id="g3k-TV-A8a"/>
+                <constraint firstItem="1IY-cO-0RJ" firstAttribute="centerX" secondItem="3YT-GY-r7H" secondAttribute="centerX" constant="-18" id="h6X-Ea-yGJ"/>
+                <constraint firstItem="hTG-Bu-iTf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67.5" id="hAC-9R-VRw"/>
+                <constraint firstItem="SER-RW-gJ3" firstAttribute="centerY" secondItem="WS9-b8-glW" secondAttribute="centerY" constant="18" id="hoc-jE-YcG"/>
+                <constraint firstItem="pDy-gL-9rY" firstAttribute="width" secondItem="Qhw-JB-a1C" secondAttribute="width" multiplier="0.991379" id="iHA-Zt-yj7"/>
+                <constraint firstAttribute="trailing" secondItem="3YT-GY-r7H" secondAttribute="trailing" id="oRh-AJ-wfb"/>
+                <constraint firstItem="cmJ-Gr-7sd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pdW-La-TZ7"/>
+                <constraint firstItem="WS9-b8-glW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ptg-it-F5i"/>
+                <constraint firstItem="1IY-cO-0RJ" firstAttribute="width" secondItem="3YT-GY-r7H" secondAttribute="width" multiplier="0.991379" id="suG-bo-NFu"/>
+                <constraint firstItem="Qhw-JB-a1C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wVo-hj-soT"/>
+                <constraint firstItem="pDy-gL-9rY" firstAttribute="centerY" secondItem="Qhw-JB-a1C" secondAttribute="centerY" constant="-18" id="xCJ-UB-csG"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
         </view>
