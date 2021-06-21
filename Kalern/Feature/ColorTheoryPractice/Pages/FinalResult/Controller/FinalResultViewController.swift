@@ -54,13 +54,9 @@ class FinalResultViewController: UIViewController {
         }
     }
     
-    @IBAction func btnBackToStartFailedTapped(_ sender: Any) {
-        repository.colorBalancePercentage = [0, 0, 1]
-        performSegue(withIdentifier: "goBackToHome", sender: self)
-    }
-    
     @IBAction func btnBackToStartTapped(_ sender: Any) {
-        repository.colorBalancePercentage = [0, 0, 1]
+        repository.dispose()
+        
         performSegue(withIdentifier: "goBackToHome", sender: self)
     }
     

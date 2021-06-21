@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GTB-z9-FRw">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -38,11 +38,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-3z-8GG" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="31" y="194" width="328" height="328"/>
+                                <rect key="frame" x="31" y="150" width="328" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="328" id="LNx-gh-bNL"/>
@@ -50,7 +50,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="idC-JJ-PUj">
-                                <rect key="frame" x="34" y="593" width="322" height="116"/>
+                                <rect key="frame" x="34" y="539" width="322" height="116"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-f1-yq0">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="50"/>
@@ -115,17 +115,17 @@
             <objects>
                 <viewController id="Thi-yv-Xum" customClass="ColorHueTheoryViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Op-dN-BnM" customClass="TheoryView" customModule="Kalern" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-xu-kCf">
-                                <rect key="frame" x="31" y="194" width="328" height="328"/>
+                                <rect key="frame" x="31" y="162" width="328" height="328"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cAV-xu-kCf" secondAttribute="height" multiplier="1:1" id="ni3-Bn-nX4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEK-8l-YnT">
-                                <rect key="frame" x="34" y="557" width="322" height="102"/>
+                                <rect key="frame" x="34" y="525" width="322" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="ZE5-f1-bVa"/>
                                 </constraints>
@@ -134,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-Y6-uiU">
-                                <rect key="frame" x="31" y="722" width="328" height="50"/>
+                                <rect key="frame" x="31" y="668" width="328" height="50"/>
                                 <color key="backgroundColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gLm-yu-5rp"/>
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Zpa-fa-vN5">
-                                <rect key="frame" x="34" y="113" width="322" height="36"/>
+                                <rect key="frame" x="34" y="81" width="322" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzl-VJ-3Tq">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -236,14 +236,14 @@
             <objects>
                 <viewController id="3eZ-Jd-Yga" customClass="HueAssesmentViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u8x-gZ-Tkh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-SI-fOk" customClass="ColorWheelView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="31" y="156.33333333333337" width="328" height="328"/>
+                                <rect key="frame" x="31" y="124.33333333333331" width="328" height="328"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-L1-aAy">
-                                        <rect key="frame" x="104" y="104.99999999999997" width="120" height="118.66666666666667"/>
+                                        <rect key="frame" x="104" y="105" width="120" height="118.66666666666667"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="1E1-DJ-yDN"/>
@@ -262,7 +262,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szH-hN-hXM">
-                                <rect key="frame" x="34" y="111" width="322" height="20.333333333333343"/>
+                                <rect key="frame" x="34" y="79" width="322" height="20.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.329999999999998" id="T39-oh-rVM"/>
                                 </constraints>
@@ -271,7 +271,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick colour of your choice to test your ability in this theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-uv-fcn">
-                                <rect key="frame" x="27" y="645" width="336" height="40.666666666666629"/>
+                                <rect key="frame" x="27" y="613" width="336" height="40.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40.670000000000002" id="jRl-lc-7KM"/>
                                     <constraint firstAttribute="width" constant="336" id="zQF-RX-gY6"/>
@@ -281,7 +281,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AI-M6b">
-                                <rect key="frame" x="35" y="721.66666666666663" width="320" height="50"/>
+                                <rect key="frame" x="35" y="667.66666666666663" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="35X-yt-LjV"/>
@@ -297,7 +297,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pup-me-mKD">
-                                <rect key="frame" x="86" y="522" width="218" height="74"/>
+                                <rect key="frame" x="86" y="490" width="218" height="74"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-9s-yQI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="86" y="13" width="48" height="48"/>
@@ -339,7 +339,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khI-G0-Diu">
-                                <rect key="frame" x="117" y="612" width="156" height="21"/>
+                                <rect key="frame" x="117" y="580" width="156" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="L1a-2D-SgY"/>
                                     <constraint firstAttribute="height" constant="21" id="uea-D4-wgf"/>
@@ -394,23 +394,23 @@
             <objects>
                 <viewController id="hO8-HI-vTY" customClass="ColorHierarchyViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0NH-ZR-XIs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hue for your Primary color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh5-ua-lAh">
-                                <rect key="frame" x="45" y="111" width="300" height="20.333333333333343"/>
+                                <rect key="frame" x="45" y="79" width="300" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Hue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUW-aV-Xwp">
-                                <rect key="frame" x="150" y="573.66666666666663" width="90" height="20.333333333333371"/>
+                                <rect key="frame" x="150" y="541.66666666666663" width="90" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-lw-m7A">
-                                <rect key="frame" x="34" y="722" width="322" height="50"/>
+                                <rect key="frame" x="34" y="668" width="322" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZL5-9D-lhm"/>
@@ -426,7 +426,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEz-b4-aZF">
-                                <rect key="frame" x="44" y="174.33333333333334" width="302" height="364.33333333333326"/>
+                                <rect key="frame" x="44" y="142.33333333333334" width="302" height="364.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" alignment="bottom" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-nA-IMK">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="302"/>
@@ -520,7 +520,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="yqi-2Q-j8e">
-                                                <rect key="frame" x="3.3333333333333428" y="25.000000000000057" width="295.33333333333326" height="20.333333333333329"/>
+                                                <rect key="frame" x="3.3333333333333428" y="25" width="295.33333333333326" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLA-VP-H2E">
                                                         <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="20.333333333333332"/>
@@ -571,7 +571,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-4z-75U">
-                                <rect key="frame" x="98.666666666666686" y="610" width="193" height="57"/>
+                                <rect key="frame" x="98.666666666666686" y="578" width="193" height="57"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt0-yf-Rzc" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
@@ -640,11 +640,11 @@
             <objects>
                 <viewController id="to4-ek-sWQ" customClass="TintShadesViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SZr-v6-GrB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick one between Tint &amp; Shade for your color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ube-Bl-wbs">
-                                <rect key="frame" x="20" y="115" width="350" height="49"/>
+                                <rect key="frame" x="20" y="83" width="350" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="biT-U1-iQm"/>
                                     <constraint firstAttribute="height" constant="49" id="hgD-J4-XXt"/>
@@ -654,14 +654,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zi8-U3-bEP">
-                                <rect key="frame" x="135" y="206" width="120" height="119.99999999999999"/>
+                                <rect key="frame" x="135" y="174" width="120" height="97.999999999999986"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="que-1o-plj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tint &amp; Shade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458-3Z-Hud">
-                                <rect key="frame" x="20" y="363" width="350" height="29"/>
+                                <rect key="frame" x="20" y="309" width="350" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="KgL-mA-0vF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="P9K-Qv-cSO"/>
@@ -673,7 +673,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-li-nVm">
-                                <rect key="frame" x="45" y="407" width="300" height="68"/>
+                                <rect key="frame" x="45" y="353" width="300" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="FHq-c0-aYg"/>
                                     <constraint firstAttribute="width" constant="300" id="YPf-yq-9oM"/>
@@ -685,7 +685,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63D-Mx-pTn">
-                                <rect key="frame" x="27" y="715" width="336" height="76"/>
+                                <rect key="frame" x="27" y="661" width="336" height="76"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JsM-m7-bbA">
                                         <rect key="frame" x="19.666666666666657" y="9" width="297" height="59"/>
@@ -799,7 +799,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-u0-6Bb">
-                                <rect key="frame" x="45" y="512" width="300" height="107"/>
+                                <rect key="frame" x="45" y="458" width="300" height="107"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-bs-kcu">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="48"/>
@@ -947,23 +947,23 @@ A shade is a color added with black</string>
             <objects>
                 <viewController id="NaF-Wa-BDP" customClass="InstructionsViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cMh-IR-och">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Time!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRX-TM-6ki">
-                                <rect key="frame" x="20" y="115" width="350" height="24"/>
+                                <rect key="frame" x="20" y="83" width="350" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color the UI design according to the 60/30/10 rule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlF-XJ-3wh">
-                                <rect key="frame" x="45" y="178" width="300" height="40.666666666666657"/>
+                                <rect key="frame" x="45" y="146" width="300" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Sw-x9G">
-                                <rect key="frame" x="20.000000000000007" y="247.66666666666663" width="94.666666666666686" height="49"/>
+                                <rect key="frame" x="20.000000000000007" y="215.66666666666666" width="94.666666666666686" height="48.999999999999972"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="vKe-2Q-E7Y"/>
                                 </constraints>
@@ -972,7 +972,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI2-0O-qPR">
-                                <rect key="frame" x="35" y="723" width="320" height="50"/>
+                                <rect key="frame" x="35" y="669" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sPw-Vw-RMQ"/>
@@ -988,7 +988,7 @@ A shade is a color added with black</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="2Gj-NR-h66">
-                                <rect key="frame" x="20" y="323.66666666666669" width="350" height="357.00000000000006"/>
+                                <rect key="frame" x="20" y="291.66666666666669" width="350" height="357.00000000000006"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m0n-c5-ben">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="101"/>
@@ -1194,11 +1194,11 @@ A shade is a color added with black</string>
             <objects>
                 <viewController id="DMN-19-U4O" customClass="TemplateViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Obz-Qd-qgt">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-zU-rja">
-                                <rect key="frame" x="27" y="729" width="336" height="76"/>
+                                <rect key="frame" x="27" y="675" width="336" height="76"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-a1-JoI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="21" y="9" width="42" height="42"/>
@@ -1327,7 +1327,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-8S-DIj" customClass="TemplateView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="27" y="98" width="336" height="610"/>
+                                <rect key="frame" x="27" y="66" width="336" height="588"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="336" id="88A-lu-Ww5"/>
@@ -1366,11 +1366,11 @@ A shade is a color added with black</string>
             <objects>
                 <viewController id="ZPM-bt-lez" customClass="FinalResultViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MCZ-5I-obb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Result Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs3-UN-AnC">
-                                <rect key="frame" x="55" y="476" width="280" height="21"/>
+                                <rect key="frame" x="55" y="444" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dwt-vh-V8B"/>
                                     <constraint firstAttribute="width" constant="280" id="hW4-zE-4Iw"/>
@@ -1380,7 +1380,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Result Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21S-7c-ZdD">
-                                <rect key="frame" x="36" y="506" width="318" height="90"/>
+                                <rect key="frame" x="36" y="474" width="318" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="318" id="SgD-CV-Uzt"/>
                                     <constraint firstAttribute="height" constant="90" id="goJ-YS-SbJ"/>
@@ -1390,7 +1390,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-H7-Yep">
-                                <rect key="frame" x="70" y="616" width="250" height="60"/>
+                                <rect key="frame" x="70" y="584" width="250" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLj-WK-K39" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1425,13 +1425,13 @@ A shade is a color added with black</string>
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1J3-p7-wcN">
-                                <rect key="frame" x="97" y="103" width="196" height="355"/>
+                                <rect key="frame" x="97" y="71" width="196" height="355"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1J3-p7-wcN" secondAttribute="height" multiplier="196:355" id="DmJ-tO-2hR"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1h-rp-gRw">
-                                <rect key="frame" x="34.666666666666657" y="723" width="321" height="50"/>
+                                <rect key="frame" x="34.666666666666657" y="669" width="321" height="50"/>
                                 <color key="backgroundColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Cve-5E-gRM"/>
@@ -1446,7 +1446,7 @@ A shade is a color added with black</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-Wa-0qp">
-                                <rect key="frame" x="35.666666666666657" y="723" width="319" height="50"/>
+                                <rect key="frame" x="35.666666666666657" y="669" width="319" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K26-vg-V6d">
                                         <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
@@ -1471,7 +1471,7 @@ A shade is a color added with black</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnBackToStartFailedTapped:" destination="ZPM-bt-lez" eventType="touchUpInside" id="XDN-hm-Z4t"/>
+                                            <action selector="btnBackToStartTapped:" destination="ZPM-bt-lez" eventType="touchUpInside" id="Bga-IB-7Ts"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1482,7 +1482,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-Ij-OA9">
-                                <rect key="frame" x="75" y="636" width="240" height="20"/>
+                                <rect key="frame" x="75" y="604" width="240" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCW-le-zvi">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
@@ -1568,7 +1568,6 @@ A shade is a color added with black</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Uqm-42-zjX"/>
         <segue reference="smL-dJ-PIb"/>
     </inferredMetricsTieBreakers>
     <resources>
