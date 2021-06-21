@@ -24,7 +24,7 @@ class TemplateViewController: UIViewController {
         super.viewDidLoad()
         
         repository.modifiedColorPallete?.initColorPalleteView(colorDotViews: colorPaletteView)
-        
+    
         for colorDot in colorPaletteView {
             colorDot.addGestureRecognizer(setColorPalleteGesture())
         }
