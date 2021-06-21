@@ -67,6 +67,8 @@ class HueAssesmentViewController: UIViewController {
         titleResult.isHidden = true
         
         btnNext.layer.cornerRadius = 10
+        btnNext.isEnabled = false
+        btnNext.backgroundColor = .lightGray
         
         colorPalleteContainer.layer.cornerRadius = 10
         
@@ -113,7 +115,7 @@ class HueAssesmentViewController: UIViewController {
             }
         }
         if flag {
-            btnNext.alpha = 1
+            btnNext.backgroundColor = #colorLiteral(red: 1, green: 0.2967299819, blue: 0, alpha: 1)
             btnNext.isEnabled = true
             assesmentImageView.image = UIImage(systemName: "checkmark.circle.fill")
             assesmentImageView.tintColor = #colorLiteral(red: 0, green: 0.5764705882, blue: 0, alpha: 1)
@@ -121,6 +123,8 @@ class HueAssesmentViewController: UIViewController {
             titleResult.text = colorHueAssessment[0].titleResult
             descResult.text = colorHueAssessment[0].descResult
         } else {
+            btnNext.backgroundColor = .lightGray
+            btnNext.isEnabled = false
             assesmentImageView.image = UIImage(systemName: "x.circle.fill")
             assesmentImageView.tintColor = #colorLiteral(red: 0.9921568627, green: 0.3254901961, blue: 0.03137254902, alpha: 1)
             titleResult.isHidden = false
