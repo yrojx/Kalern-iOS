@@ -16,6 +16,8 @@ class TemplateViewController: UIViewController {
     
     let repository = ColorTheoryPracticeRepository.shared
     
+    var imageViewTemplate: UIImage?
+    
     var index = 0
     
     override func viewDidLoad() {
@@ -54,7 +56,13 @@ class TemplateViewController: UIViewController {
     
     @objc func handleDone(sender: UIBarButtonItem) {
         colorBalanceAssessment()
-        print(repository.colorBalancePercentage)
+        imageViewTemplate = UIImage(view: templateView)
+        performSegue(withIdentifier: "goToFinalResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! FinalResultViewController
+        vc.imageFinalResult = self.imageViewTemplate
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
