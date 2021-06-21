@@ -45,12 +45,11 @@
                                 <rect key="frame" x="31" y="150" width="328" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="328" id="LNx-gh-bNL"/>
-                                    <constraint firstAttribute="width" constant="328" id="S5f-XB-jgN"/>
+                                    <constraint firstAttribute="width" secondItem="5IB-3z-8GG" secondAttribute="height" multiplier="1:1" id="B0U-nC-ePz"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="idC-JJ-PUj">
-                                <rect key="frame" x="34" y="539" width="322" height="116"/>
+                                <rect key="frame" x="34" y="549" width="322" height="116"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-f1-yq0">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="50"/>
@@ -90,11 +89,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="idC-JJ-PUj" secondAttribute="bottom" constant="101" id="Sz6-iv-vTp"/>
-                            <constraint firstItem="5IB-3z-8GG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ud4-qM-eau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5IB-3z-8GG" secondAttribute="trailing" constant="31" id="Vo5-6K-apH"/>
+                            <constraint firstItem="5IB-3z-8GG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="bQd-Hz-MW0"/>
                             <constraint firstItem="idC-JJ-PUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="g89-1k-0sn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idC-JJ-PUj" secondAttribute="trailing" constant="34" id="sph-Gf-aRl"/>
                             <constraint firstItem="5IB-3z-8GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="tqw-K3-wYT"/>
+                            <constraint firstItem="idC-JJ-PUj" firstAttribute="top" secondItem="5IB-3z-8GG" secondAttribute="bottom" constant="71" id="wRD-Ir-EjQ"/>
+                            <constraint firstItem="5IB-3z-8GG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycS-tA-a7H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eBU-Sh-Uni"/>
@@ -243,22 +244,20 @@
                                 <rect key="frame" x="31" y="124.33333333333331" width="328" height="328"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-L1-aAy">
-                                        <rect key="frame" x="104" y="105" width="120" height="118.66666666666667"/>
+                                        <rect key="frame" x="114" y="115" width="100" height="98.666666666666671"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="1E1-DJ-yDN"/>
-                                            <constraint firstAttribute="width" secondItem="TRX-L1-aAy" secondAttribute="height" multiplier="1:1" id="3Dt-EF-VUJ"/>
-                                            <constraint firstAttribute="width" constant="120" id="55L-5v-kFp"/>
+                                            <constraint firstAttribute="width" secondItem="TRX-L1-aAy" secondAttribute="height" multiplier="1:1" id="MpB-me-HZc"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerX" secondItem="UwD-SI-fOk" secondAttribute="centerX" id="33p-dB-GYC"/>
-                                    <constraint firstAttribute="width" constant="328" id="Wfh-n4-VxU"/>
-                                    <constraint firstAttribute="height" constant="328" id="Y99-cf-35C"/>
-                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerX" secondItem="UwD-SI-fOk" secondAttribute="centerX" id="qTW-v0-MRa"/>
-                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerY" secondItem="UwD-SI-fOk" secondAttribute="centerY" id="ywd-2x-0gM"/>
+                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerY" secondItem="UwD-SI-fOk" secondAttribute="centerY" id="BUz-qT-h69"/>
+                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="leading" secondItem="UwD-SI-fOk" secondAttribute="leading" constant="114" id="SVI-99-NZx"/>
+                                    <constraint firstItem="TRX-L1-aAy" firstAttribute="centerX" secondItem="UwD-SI-fOk" secondAttribute="centerX" id="asx-Ck-d3i"/>
+                                    <constraint firstAttribute="width" secondItem="UwD-SI-fOk" secondAttribute="height" multiplier="1:1" id="qzV-Aw-4O9"/>
+                                    <constraint firstAttribute="trailing" secondItem="TRX-L1-aAy" secondAttribute="trailing" constant="114" id="z9K-TG-krl"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szH-hN-hXM">
@@ -270,34 +269,17 @@
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick colour of your choice to test your ability in this theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-uv-fcn">
-                                <rect key="frame" x="27" y="613" width="336" height="40.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick colour of your choice to test your ability in this theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-uv-fcn">
+                                <rect key="frame" x="27" y="599.33333333333337" width="336" height="40.666666666666629"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40.670000000000002" id="jRl-lc-7KM"/>
                                     <constraint firstAttribute="width" constant="336" id="zQF-RX-gY6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AI-M6b">
-                                <rect key="frame" x="35" y="667.66666666666663" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="35X-yt-LjV"/>
-                                    <constraint firstAttribute="width" constant="320" id="mxw-mM-hmf"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yVT-Vj-3K2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnNextTapped:" destination="3eZ-Jd-Yga" eventType="touchUpInside" id="MQs-kD-6q6"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pup-me-mKD">
-                                <rect key="frame" x="86" y="490" width="218" height="74"/>
+                                <rect key="frame" x="86" y="476.33333333333326" width="218" height="74"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-9s-yQI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="86" y="13" width="48" height="48"/>
@@ -339,35 +321,51 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khI-G0-Diu">
-                                <rect key="frame" x="117" y="580" width="156" height="21"/>
+                                <rect key="frame" x="30" y="566.33333333333337" width="330" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="L1a-2D-SgY"/>
                                     <constraint firstAttribute="height" constant="21" id="uea-D4-wgf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AI-M6b">
+                                <rect key="frame" x="34" y="676" width="321" height="50"/>
+                                <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="35X-yt-LjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextTapped:" destination="3eZ-Jd-Yga" eventType="touchUpInside" id="MQs-kD-6q6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vsj-3V-SsP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="34" id="11Y-9W-M34"/>
                             <constraint firstItem="szH-hN-hXM" firstAttribute="top" secondItem="Vsj-3V-SsP" secondAttribute="top" constant="23" id="2lB-A4-UEc"/>
                             <constraint firstItem="szH-hN-hXM" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="34" id="2ml-ja-WeC"/>
                             <constraint firstItem="khI-G0-Diu" firstAttribute="top" secondItem="pup-me-mKD" secondAttribute="bottom" constant="16" id="4W7-Qo-fBD"/>
-                            <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="37.670000000000002" id="4gu-6N-w6p"/>
+                            <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="25" id="62C-eh-OIB"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="6iN-Ha-YZS"/>
-                            <constraint firstItem="UwD-SI-fOk" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="AvF-dW-Doy"/>
-                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="bottom" secondItem="Hfq-AI-M6b" secondAttribute="bottom" constant="38.329999999999998" id="BUj-d0-itp"/>
-                            <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="37.670000000000002" id="TVX-Rx-uPW"/>
-                            <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="25" id="VjO-g2-ukF"/>
-                            <constraint firstItem="UwD-SI-fOk" firstAttribute="top" secondItem="szH-hN-hXM" secondAttribute="bottom" constant="25" id="Yuy-WL-dBX"/>
+                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="UwD-SI-fOk" secondAttribute="trailing" constant="31" id="7Ac-aF-cFW"/>
+                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="top" secondItem="lUB-uv-fcn" secondAttribute="bottom" constant="36" id="BZV-3e-Em3"/>
+                            <constraint firstItem="UwD-SI-fOk" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="31" id="SCm-8M-ExT"/>
+                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="khI-G0-Diu" secondAttribute="trailing" constant="30" id="aTn-rS-79f"/>
                             <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="szH-hN-hXM" secondAttribute="trailing" constant="34" id="art-ks-uGM"/>
-                            <constraint firstItem="Hfq-AI-M6b" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="b9V-2p-ZwG"/>
                             <constraint firstItem="lUB-uv-fcn" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="cFw-Uf-hMj"/>
                             <constraint firstItem="lUB-uv-fcn" firstAttribute="top" secondItem="khI-G0-Diu" secondAttribute="bottom" constant="12" id="cJP-DN-tFZ"/>
                             <constraint firstItem="pup-me-mKD" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="koI-CP-AFS"/>
                             <constraint firstItem="khI-G0-Diu" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="wGc-Co-IiB"/>
+                            <constraint firstItem="khI-G0-Diu" firstAttribute="leading" secondItem="Vsj-3V-SsP" secondAttribute="leading" constant="30" id="xHK-nJ-vRg"/>
+                            <constraint firstItem="Vsj-3V-SsP" firstAttribute="trailing" secondItem="Hfq-AI-M6b" secondAttribute="trailing" constant="35" id="xIj-qj-7ki"/>
+                            <constraint firstItem="UwD-SI-fOk" firstAttribute="centerX" secondItem="u8x-gZ-Tkh" secondAttribute="centerX" id="y1r-WQ-MFO"/>
+                            <constraint firstItem="pup-me-mKD" firstAttribute="top" secondItem="UwD-SI-fOk" secondAttribute="bottom" constant="24" id="yt1-So-UQx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QSo-8I-Opt"/>
@@ -404,7 +402,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Hue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUW-aV-Xwp">
-                                <rect key="frame" x="150" y="541.66666666666663" width="90" height="20.333333333333371"/>
+                                <rect key="frame" x="50" y="541.66666666666663" width="290" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -526,7 +524,6 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="20.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20.329999999999998" id="WKh-fF-oLN"/>
-                                                            <constraint firstAttribute="width" constant="58.329999999999998" id="j7m-Tr-jKC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -536,7 +533,6 @@
                                                         <rect key="frame" x="109.33333333333331" y="0.0" width="81.666666666666686" height="20.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20.329999999999998" id="O7q-mK-Vay"/>
-                                                            <constraint firstAttribute="width" constant="81.670000000000002" id="bQg-DD-JGT"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -546,7 +542,6 @@
                                                         <rect key="frame" x="241.99999999999997" y="0.0" width="53.333333333333343" height="20.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20.329999999999998" id="hko-jM-s4J"/>
-                                                            <constraint firstAttribute="width" constant="53.329999999999998" id="tw8-H8-Krh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -607,14 +602,14 @@
                             <constraint firstItem="GcA-MB-v22" firstAttribute="bottom" secondItem="kh0-lw-m7A" secondAttribute="bottom" constant="38" id="FPZ-Pm-zpX"/>
                             <constraint firstItem="WEz-b4-aZF" firstAttribute="top" secondItem="eh5-ua-lAh" secondAttribute="bottom" constant="43" id="Ljj-bZ-UxK"/>
                             <constraint firstItem="GcA-MB-v22" firstAttribute="trailing" secondItem="eh5-ua-lAh" secondAttribute="trailing" constant="45" id="QVJ-TF-XIn"/>
-                            <constraint firstItem="GcA-MB-v22" firstAttribute="trailing" secondItem="bUW-aV-Xwp" secondAttribute="trailing" constant="150" id="RvV-Zd-9RH"/>
+                            <constraint firstItem="GcA-MB-v22" firstAttribute="trailing" secondItem="bUW-aV-Xwp" secondAttribute="trailing" constant="50" id="RvV-Zd-9RH"/>
                             <constraint firstItem="WEz-b4-aZF" firstAttribute="centerX" secondItem="0NH-ZR-XIs" secondAttribute="centerX" id="XjR-wk-1M4"/>
                             <constraint firstItem="N5f-4z-75U" firstAttribute="top" secondItem="bUW-aV-Xwp" secondAttribute="bottom" constant="16" id="gXW-YU-i7f"/>
                             <constraint firstItem="kh0-lw-m7A" firstAttribute="centerX" secondItem="0NH-ZR-XIs" secondAttribute="centerX" id="jwZ-YV-6P9"/>
                             <constraint firstItem="bUW-aV-Xwp" firstAttribute="top" secondItem="WEz-b4-aZF" secondAttribute="bottom" constant="35" id="kjf-AD-hQs"/>
                             <constraint firstItem="N5f-4z-75U" firstAttribute="centerX" secondItem="0NH-ZR-XIs" secondAttribute="centerX" id="pEj-No-we6"/>
                             <constraint firstItem="eh5-ua-lAh" firstAttribute="leading" secondItem="GcA-MB-v22" secondAttribute="leading" constant="45" id="qlb-hK-hJH"/>
-                            <constraint firstItem="bUW-aV-Xwp" firstAttribute="leading" secondItem="GcA-MB-v22" secondAttribute="leading" constant="150" id="uA1-tc-GXV"/>
+                            <constraint firstItem="bUW-aV-Xwp" firstAttribute="leading" secondItem="GcA-MB-v22" secondAttribute="leading" constant="50" id="uA1-tc-GXV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lik-Lp-YGx">
@@ -957,22 +952,19 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color the UI design according to the 60/30/10 rule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlF-XJ-3wh">
-                                <rect key="frame" x="45" y="146" width="300" height="40.666666666666657"/>
+                                <rect key="frame" x="45" y="125.00000000000001" width="300" height="40.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Sw-x9G">
-                                <rect key="frame" x="20.000000000000007" y="215.66666666666666" width="94.666666666666686" height="48.999999999999972"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="vKe-2Q-E7Y"/>
-                                </constraints>
+                                <rect key="frame" x="20.000000000000007" y="183.66666666666666" width="94.666666666666686" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97811347250000003" green="0.41086977720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI2-0O-qPR">
-                                <rect key="frame" x="35" y="669" width="320" height="50"/>
+                                <rect key="frame" x="35" y="644" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.91159415249999998" green="0.44224062559999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sPw-Vw-RMQ"/>
@@ -988,7 +980,7 @@ A shade is a color added with black</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="2Gj-NR-h66">
-                                <rect key="frame" x="20" y="291.66666666666669" width="350" height="357.00000000000006"/>
+                                <rect key="frame" x="20" y="231" width="350" height="357"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m0n-c5-ben">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="101"/>
@@ -1080,7 +1072,7 @@ A shade is a color added with black</string>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v72-fD-TtV">
-                                                <rect key="frame" x="109" y="26.666666666666625" width="241" height="47.666666666666657"/>
+                                                <rect key="frame" x="109" y="26.666666666666682" width="241" height="47.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xF-P1-ecQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="88" height="20.333333333333332"/>
@@ -1089,7 +1081,7 @@ A shade is a color added with black</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For foregrounds, text, and icons. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-S0-w6N">
-                                                        <rect key="frame" x="0.0" y="28.333333333333371" width="239.66666666666666" height="19.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="28.333333333333314" width="239.66666666666666" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1099,7 +1091,7 @@ A shade is a color added with black</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-iW-hsU">
-                                        <rect key="frame" x="0.0" y="255.99999999999994" width="350" height="101"/>
+                                        <rect key="frame" x="0.0" y="256" width="350" height="101"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqF-PM-jI1">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="101"/>
@@ -1133,7 +1125,7 @@ A shade is a color added with black</string>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-OG-JiZ">
-                                                <rect key="frame" x="109" y="15.666666666666742" width="241" height="70"/>
+                                                <rect key="frame" x="109" y="15.666666666666686" width="241" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accent" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-cj-h6l">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="21"/>
@@ -1145,7 +1137,7 @@ A shade is a color added with black</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To emphasize elements, such as buttons and call to actions." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utE-aE-NRV">
-                                                        <rect key="frame" x="0.0" y="29" width="238.66666666666666" height="41"/>
+                                                        <rect key="frame" x="0.0" y="28.999999999999943" width="238.66666666666666" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="U29-yz-DjI"/>
                                                         </constraints>
@@ -1163,15 +1155,15 @@ A shade is a color added with black</string>
                         <viewLayoutGuide key="safeArea" id="THN-6u-D85"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="THN-6u-D85" firstAttribute="bottom" secondItem="wI2-0O-qPR" secondAttribute="bottom" constant="37" id="0VK-6E-oVa"/>
                             <constraint firstItem="mRX-TM-6ki" firstAttribute="leading" secondItem="THN-6u-D85" secondAttribute="leading" constant="20" id="1dS-t7-P2x"/>
                             <constraint firstItem="wI2-0O-qPR" firstAttribute="leading" secondItem="THN-6u-D85" secondAttribute="leading" constant="35" id="7qJ-w2-iTY"/>
-                            <constraint firstItem="rlF-XJ-3wh" firstAttribute="top" secondItem="mRX-TM-6ki" secondAttribute="bottom" constant="39" id="8BR-NG-aVC"/>
+                            <constraint firstItem="rlF-XJ-3wh" firstAttribute="top" secondItem="mRX-TM-6ki" secondAttribute="bottom" constant="18" id="8BR-NG-aVC"/>
                             <constraint firstItem="mRX-TM-6ki" firstAttribute="top" secondItem="THN-6u-D85" secondAttribute="top" constant="27" id="CgY-7Q-jAF"/>
                             <constraint firstItem="THN-6u-D85" firstAttribute="trailing" secondItem="2Gj-NR-h66" secondAttribute="trailing" constant="20" id="DOb-Xu-ZQb"/>
                             <constraint firstItem="rlF-XJ-3wh" firstAttribute="leading" secondItem="THN-6u-D85" secondAttribute="leading" constant="45" id="EMj-gY-LR4"/>
                             <constraint firstItem="THN-6u-D85" firstAttribute="trailing" secondItem="rlF-XJ-3wh" secondAttribute="trailing" constant="45" id="GBV-vp-ITm"/>
-                            <constraint firstItem="hTk-Sw-x9G" firstAttribute="top" secondItem="rlF-XJ-3wh" secondAttribute="bottom" constant="29" id="Sa5-1F-fDY"/>
+                            <constraint firstItem="wI2-0O-qPR" firstAttribute="top" secondItem="2Gj-NR-h66" secondAttribute="bottom" constant="56" id="MCF-XE-0Pw"/>
+                            <constraint firstItem="hTk-Sw-x9G" firstAttribute="top" secondItem="rlF-XJ-3wh" secondAttribute="bottom" constant="18" id="Sa5-1F-fDY"/>
                             <constraint firstItem="hTk-Sw-x9G" firstAttribute="leading" secondItem="THN-6u-D85" secondAttribute="leading" constant="20" id="Vj3-bx-UOI"/>
                             <constraint firstItem="2Gj-NR-h66" firstAttribute="leading" secondItem="THN-6u-D85" secondAttribute="leading" constant="20" id="eUL-ei-rbE"/>
                             <constraint firstItem="THN-6u-D85" firstAttribute="trailing" secondItem="wI2-0O-qPR" secondAttribute="trailing" constant="35" id="ek8-fJ-aIR"/>
@@ -1193,12 +1185,12 @@ A shade is a color added with black</string>
         <scene sceneID="YWu-Ra-rc0">
             <objects>
                 <viewController id="DMN-19-U4O" customClass="TemplateViewController" customModule="Kalern" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Obz-Qd-qgt">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Obz-Qd-qgt">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-zU-rja">
-                                <rect key="frame" x="27" y="675" width="336" height="76"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-zU-rja">
+                                <rect key="frame" x="27" y="729" width="336" height="76"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-a1-JoI" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="21" y="9" width="42" height="42"/>
@@ -1234,7 +1226,6 @@ A shade is a color added with black</string>
                                         <rect key="frame" x="24" y="56" width="37" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="EST-8K-aPX"/>
-                                            <constraint firstAttribute="width" constant="37" id="bT4-Q8-Uq6"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="icu-7d-0il"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="37" id="kva-Zx-iwW"/>
                                         </constraints>
@@ -1248,7 +1239,6 @@ A shade is a color added with black</string>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="HgE-lV-gf6"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="KxP-zG-ubR"/>
                                             <constraint firstAttribute="height" constant="12" id="V1L-DH-0qV"/>
-                                            <constraint firstAttribute="width" constant="52" id="dgX-kZ-OUe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <nil key="textColor"/>
@@ -1258,9 +1248,7 @@ A shade is a color added with black</string>
                                         <rect key="frame" x="144" y="56" width="34" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="P4K-mb-RE8"/>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="34" id="Tra-x5-Mse"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="VoK-2F-0rQ"/>
-                                            <constraint firstAttribute="width" constant="34" id="Ygg-xW-mvC"/>
                                             <constraint firstAttribute="height" constant="12" id="kcS-i5-9Ie"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="12" id="zvS-cf-3bK"/>
                                         </constraints>
@@ -1276,9 +1264,8 @@ A shade is a color added with black</string>
                                             <constraint firstAttribute="height" constant="50" id="9qG-BX-pfq"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="XvZ-Fd-XfO"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="hlN-Mf-TS7"/>
-                                            <constraint firstAttribute="width" constant="117" id="mx8-fX-nWk"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <state key="normal" title="Show Object">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1326,11 +1313,11 @@ A shade is a color added with black</string>
                                     <constraint firstItem="l31-K0-sl3" firstAttribute="leading" secondItem="huy-42-6Ib" secondAttribute="trailing" constant="15" id="xjy-TT-Yc1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-8S-DIj" customClass="TemplateView" customModule="Kalern" customModuleProvider="target">
-                                <rect key="frame" x="27" y="66" width="336" height="588"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-8S-DIj" customClass="TemplateView" customModule="Kalern" customModuleProvider="target">
+                                <rect key="frame" x="27" y="98" width="336" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="336" id="88A-lu-Ww5"/>
+                                    <constraint firstAttribute="width" secondItem="fJ2-8S-DIj" secondAttribute="height" multiplier="168:305" id="Lue-lP-18s"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1338,12 +1325,11 @@ A shade is a color added with black</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UwR-ty-BSs" firstAttribute="bottom" secondItem="dfe-zU-rja" secondAttribute="bottom" constant="5" id="2ET-ps-O6t"/>
-                            <constraint firstItem="UwR-ty-BSs" firstAttribute="trailing" secondItem="fJ2-8S-DIj" secondAttribute="trailing" constant="27" id="3mD-cM-m9r"/>
                             <constraint firstItem="dfe-zU-rja" firstAttribute="top" secondItem="fJ2-8S-DIj" secondAttribute="bottom" constant="21" id="9ak-jH-csk"/>
-                            <constraint firstItem="dfe-zU-rja" firstAttribute="leading" secondItem="UwR-ty-BSs" secondAttribute="leading" constant="27" id="Bpz-g8-66N"/>
-                            <constraint firstItem="fJ2-8S-DIj" firstAttribute="leading" secondItem="UwR-ty-BSs" secondAttribute="leading" constant="27" id="PG9-vR-3Qm"/>
-                            <constraint firstItem="UwR-ty-BSs" firstAttribute="trailing" secondItem="dfe-zU-rja" secondAttribute="trailing" constant="27" id="fp1-yK-ypc"/>
+                            <constraint firstItem="fJ2-8S-DIj" firstAttribute="centerX" secondItem="Obz-Qd-qgt" secondAttribute="centerX" id="K3y-JN-9wX"/>
+                            <constraint firstItem="dfe-zU-rja" firstAttribute="leading" secondItem="UwR-ty-BSs" secondAttribute="leading" constant="27" id="ZpW-Mh-zyH"/>
                             <constraint firstItem="fJ2-8S-DIj" firstAttribute="top" secondItem="UwR-ty-BSs" secondAttribute="top" constant="10" id="hUX-lg-PGb"/>
+                            <constraint firstItem="UwR-ty-BSs" firstAttribute="trailing" secondItem="dfe-zU-rja" secondAttribute="trailing" constant="27" id="yy3-5Y-i9g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qJG-k9-zcv"/>
@@ -1370,7 +1356,7 @@ A shade is a color added with black</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Result Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs3-UN-AnC">
-                                <rect key="frame" x="55" y="444" width="280" height="21"/>
+                                <rect key="frame" x="55" y="388" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dwt-vh-V8B"/>
                                     <constraint firstAttribute="width" constant="280" id="hW4-zE-4Iw"/>
@@ -1379,10 +1365,9 @@ A shade is a color added with black</string>
                                 <color key="textColor" red="0.91159337760000003" green="0.35570549959999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Result Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21S-7c-ZdD">
-                                <rect key="frame" x="36" y="474" width="318" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Result Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21S-7c-ZdD">
+                                <rect key="frame" x="26" y="418" width="338" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="318" id="SgD-CV-Uzt"/>
                                     <constraint firstAttribute="height" constant="90" id="goJ-YS-SbJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1390,7 +1375,7 @@ A shade is a color added with black</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-H7-Yep">
-                                <rect key="frame" x="70" y="584" width="250" height="60"/>
+                                <rect key="frame" x="70" y="528" width="250" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLj-WK-K39" customClass="ColorDotView" customModule="Kalern" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1425,7 +1410,7 @@ A shade is a color added with black</string>
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1J3-p7-wcN">
-                                <rect key="frame" x="97" y="71" width="196" height="355"/>
+                                <rect key="frame" x="97" y="15" width="196" height="355"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1J3-p7-wcN" secondAttribute="height" multiplier="196:355" id="DmJ-tO-2hR"/>
                                 </constraints>
@@ -1451,7 +1436,6 @@ A shade is a color added with black</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K26-vg-V6d">
                                         <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="141" id="1ah-tp-keo"/>
                                             <constraint firstAttribute="height" constant="50" id="a2q-iE-4D7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1481,13 +1465,12 @@ A shade is a color added with black</string>
                                     <constraint firstAttribute="width" constant="319" id="iXq-Sb-Nr4"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-Ij-OA9">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-Ij-OA9">
                                 <rect key="frame" x="75" y="604" width="240" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCW-le-zvi">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Gvd-8s-4zj"/>
                                             <constraint firstAttribute="width" constant="50" id="mNt-tC-9cV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -1498,7 +1481,6 @@ A shade is a color added with black</string>
                                         <rect key="frame" x="95" y="0.0" width="50" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="4Wx-oT-bO5"/>
-                                            <constraint firstAttribute="height" constant="20.329999999999998" id="hiF-bE-VJ1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1508,7 +1490,6 @@ A shade is a color added with black</string>
                                         <rect key="frame" x="190" y="0.0" width="50" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="3Ni-ds-I2H"/>
-                                            <constraint firstAttribute="height" constant="20.329999999999998" id="Zf6-mE-m7q"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1527,7 +1508,6 @@ A shade is a color added with black</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3M9-UG-s3k" firstAttribute="trailing" secondItem="1J3-p7-wcN" secondAttribute="trailing" constant="97" id="5YD-kx-ySs"/>
-                            <constraint firstItem="PD9-Ij-OA9" firstAttribute="top" secondItem="21S-7c-ZdD" secondAttribute="bottom" constant="40" id="5d1-oa-AD1"/>
                             <constraint firstItem="1J3-p7-wcN" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="AEX-75-6zg"/>
                             <constraint firstItem="a1h-rp-gRw" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="Edq-Wu-OoI"/>
                             <constraint firstItem="1J3-p7-wcN" firstAttribute="leading" secondItem="3M9-UG-s3k" secondAttribute="leading" constant="97" id="HJb-Um-Rci"/>
@@ -1535,9 +1515,11 @@ A shade is a color added with black</string>
                             <constraint firstItem="21S-7c-ZdD" firstAttribute="top" secondItem="Zs3-UN-AnC" secondAttribute="bottom" constant="9" id="MBy-Rn-ypv"/>
                             <constraint firstItem="Afp-H7-Yep" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="T00-a0-esf"/>
                             <constraint firstItem="3M9-UG-s3k" firstAttribute="bottom" secondItem="a1h-rp-gRw" secondAttribute="bottom" constant="37" id="T8T-Of-Fbj"/>
+                            <constraint firstItem="21S-7c-ZdD" firstAttribute="leading" secondItem="3M9-UG-s3k" secondAttribute="leading" constant="26" id="VLq-df-lzV"/>
                             <constraint firstItem="1J3-p7-wcN" firstAttribute="top" secondItem="3M9-UG-s3k" secondAttribute="top" constant="15" id="Vw0-co-Cac"/>
                             <constraint firstItem="Zs3-UN-AnC" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="WQZ-pE-31P"/>
                             <constraint firstItem="PD9-Ij-OA9" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="WZf-OP-RyI"/>
+                            <constraint firstItem="3M9-UG-s3k" firstAttribute="trailing" secondItem="21S-7c-ZdD" secondAttribute="trailing" constant="26" id="ZPF-8o-yev"/>
                             <constraint firstItem="7AH-Wa-0qp" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="dH9-US-vtz"/>
                             <constraint firstItem="21S-7c-ZdD" firstAttribute="centerX" secondItem="MCZ-5I-obb" secondAttribute="centerX" id="gdy-Vv-vjp"/>
                             <constraint firstItem="3M9-UG-s3k" firstAttribute="bottom" secondItem="7AH-Wa-0qp" secondAttribute="bottom" constant="37" id="hGg-lG-4n3"/>
@@ -1568,6 +1550,7 @@ A shade is a color added with black</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="H7d-k3-oba"/>
         <segue reference="smL-dJ-PIb"/>
     </inferredMetricsTieBreakers>
     <resources>
