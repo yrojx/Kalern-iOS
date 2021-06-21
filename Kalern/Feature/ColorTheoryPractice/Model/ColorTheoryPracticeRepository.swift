@@ -14,33 +14,25 @@ class ColorTheoryPracticeRepository {
     var colorHueTheories: [ColorHueTheory]
     var shades = [[UIColor]]()
     var tints = [[UIColor]]()
-    var defaultColorPallete = UIColor(red: CGFloat(227) / 255, green: CGFloat(228) / 255, blue: CGFloat(230) / 255, alpha: 1)
+    let defaultColorPallete = UIColor(red: CGFloat(227) / 255, green: CGFloat(228) / 255, blue: CGFloat(230) / 255, alpha: 1)
     var colorBalancePercentage = [0, 0, 1]
     
     static let shared = ColorTheoryPracticeRepository(colorHueTheoryStaticDataStore: ColorHueTheoryStaticDataStore())
     
     init(colorHueTheoryStaticDataStore: ColorHueTheoryStaticDataStore) {
         colorHueTheories = colorHueTheoryStaticDataStore.initColorHueTheory()
-        for _ in 0...2 {
-            colorPallete?.colors.append(defaultColorPallete)
-        }
+        colorPallete = ColorPallete(colors: [defaultColorPallete, defaultColorPallete, defaultColorPallete])
         
         // experiment dummy data
-//        pickedColorHueTheory = colorHueTheories[0]
-//        modifiedColorPallete = ColorPallete(colors: [#colorLiteral(red: 0.2392156863, green: 0.003921568627, blue: 0.6431372549, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)])
-        
-        colorPallete = ColorPallete(colors: [defaultColorPallete, defaultColorPallete, defaultColorPallete])
+        // pickedColorHueTheory = colorHueTheories[0]
+        // modifiedColorPallete = ColorPallete(colors: [#colorLiteral(red: 0.2392156863, green: 0.003921568627, blue: 0.6431372549, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)])
     }
     
     func dispose() {
         colorPallete = nil
         modifiedColorPallete = nil
         pickedColorHueTheory = nil
-        
-        for i in 0...2 {
-            colorPallete?.colors[i] = defaultColorPallete
-        }
-        
+        colorPallete = ColorPallete(colors: [defaultColorPallete, defaultColorPallete, defaultColorPallete])
         shades = [[UIColor]]()
         tints = [[UIColor]]()
         colorBalancePercentage = [0, 0, 1]
@@ -135,6 +127,5 @@ class ColorTheoryPracticeRepository {
             
 //            tints[idx].reverse()
         }
-        
     }
 }
