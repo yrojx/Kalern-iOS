@@ -7,6 +7,8 @@
 
 import UIKit
 
+@IBDesignable
+
 class TemplateView: UIView {
     @IBOutlet weak var templateView: UIView!
     @IBOutlet weak var noteLabel: UILabel!
